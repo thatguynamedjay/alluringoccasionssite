@@ -1,0 +1,3299 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Wed Feb 11 2026 06:09:32 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="alluring-occasions-by-bianca.webflow.io" data-wf-page="692314f78d9d31cc50939050"
+  data-wf-site="692314f68d9d31cc50938feb" data-wf-status="1" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Alluring Occasions by Bianca – Luxury Event Planning & Party Rentals</title>
+  <meta
+    content="Experience luxury event planning and party rentals with Alluring Occasions by Bianca. From elegant weddings to spectacular celebrations, we deliver personalized, memorable events. Book your consultation today!"
+    name="description" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="Webflow" name="generator" />
+  <link
+    href="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/css/alluring-occasions-by-bianca.webflow.shared.9e57eebfd.css"
+    rel="stylesheet" type="text/css" integrity="sha384-nlfuv91KNnJyGwiORj2/SDDPfdOH9jJ7Xsp1P7IwRugtbV/nk0wHCmNBkCt9Z6i9"
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script
+    type="text/javascript">WebFont.load({ google: { families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Roboto:300,400,500,600,700"] } });</script>
+  <script
+    type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+  <link href="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692314f78d9d31cc50939096_fav-icon.png"
+    rel="shortcut icon" type="image/x-icon" />
+  <link href="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692314f78d9d31cc50939097_web-clip.png"
+    rel="apple-touch-icon" />
+  <style>
+    .heading-style-h6 {
+      white-space: normal;
+    }
+
+    .line {
+      overflow: hidden;
+
+    }
+
+    .line span {
+      display: block;
+      transform: translateY(100%);
+      will-change: transform;
+    }
+  </style>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <style>
+    html,
+    body {
+      height: auto !important;
+      overflow-x: hidden;
+    }
+
+    html,
+    body {
+      overscroll-behavior: auto;
+    }
+
+    .line {
+      overflow: hidden;
+
+    }
+
+    .line span {
+      display: block;
+      transform: translateY(100%);
+      will-change: transform;
+    }
+
+
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    .services-section {
+      position: relative;
+      width: 100vw;
+      height: 100svh;
+      overflow: hidden;
+    }
+
+    .services-intro-text-wrapper {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .services-intro-text {
+      flex: 1;
+      position: relative;
+      will-change: transform;
+    }
+
+    .services-intro-text:nth-child(1) {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .services-bg-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      transform: scale(0);
+      will-change: transform;
+    }
+
+    .services-bg-img img {
+      transform: scale(1.5);
+      will-change: transform;
+    }
+
+    .services-titles-container {
+      position: absolute;
+      top: 0;
+      left: 15vw;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      clip-path: polygon(50svh 0px,
+          0px 50%,
+          50svh 100%,
+          100% calc(100% + 100svh),
+          100% -100svh);
+      --services-before-opacity: 0;
+      --services-after-opacity: 0;
+    }
+
+    .services-titles-container::before,
+    .services-titles-container::after {
+      content: "";
+      position: absolute;
+      width: 100svh;
+      height: 2.5px;
+      background: #fff;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 10;
+    }
+
+    .services-titles-container::before {
+      top: 0;
+      left: 0;
+      transform: rotate(-45deg) translate(-7rem);
+      opacity: var(--services-before-opacity);
+    }
+
+    .services-titles-container::after {
+      bottom: 0;
+      left: 0;
+      transform: rotate(45deg) translate(-7rem);
+      opacity: var(--services-after-opacity);
+    }
+
+    .services-titles {
+      position: relative;
+      left: 15%;
+      width: 75%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+      transform: translateY(100%);
+      z-index: 2;
+    }
+
+    .services-titles h1 {
+      color: #fff;
+      opacity: 0.25;
+      transition: opacity 0.3s ease;
+    }
+
+    .services-images {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      min-width: 300px;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .services-img {
+      position: absolute;
+      width: 200px;
+      height: 150px;
+      will-change: transform;
+    }
+
+    .services-header {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      color: #fff;
+      transition: opacity 0.3s ease;
+      z-index: 2;
+      opacity: 0;
+    }
+
+    @media (max-width: 1000px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .services-titles-container {
+        clip-path: none;
+      }
+
+      .services-titles-container::before,
+      .services-titles-container::after {
+        display: none;
+      }
+
+      .services-titles {
+        left: 0;
+      }
+
+      .services-header {
+        display: none;
+      }
+    }
+  </style>
+
+  <!-- ═══════════════════════════════════════════════
+       MOBILE OPTIMIZATION — Comprehensive Overrides
+       ═══════════════════════════════════════════════ -->
+  <style>
+    /* ── GLOBAL MOBILE FIX: prevent horizontal overflow ── */
+    .services-section,
+    .cta-section {
+      width: 100% !important;
+      max-width: 100vw;
+    }
+
+    /* ── MOBILE: 768px and below ── */
+    @media (max-width: 768px) {
+
+      /* ── PERFORMANCE: reduce will-change on mobile ── */
+      .services-intro-text,
+      .services-img,
+      .services-bg-img img,
+      .cta-banner-img-container,
+      .cta-banner-intro-text,
+      .testimonial-marquee-images,
+      .testimonial-marquee-img {
+        will-change: auto !important;
+      }
+
+      /* ── HERO SECTION ── */
+      .section_hero .hero_content-wrapper {
+        padding: 0 1rem;
+      }
+
+      .hero_content-wrapper .heading-style-h1 {
+        font-size: clamp(2rem, 8vw, 3rem) !important;
+        line-height: 1.15 !important;
+      }
+
+      .hero_content-wrapper .paragraph {
+        font-size: 0.95rem !important;
+        line-height: 1.65 !important;
+      }
+
+      /* ── ABOUT SECTION ── */
+      .about-content-wrapper {
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+      }
+
+      .section_about .paragraph {
+        font-size: 0.95rem !important;
+        line-height: 1.7 !important;
+      }
+
+      /* ── SERVICES SECTION — simplified mobile layout ── */
+      .services-section {
+        height: auto !important;
+        min-height: 100svh;
+        padding: 3rem 0 !important;
+      }
+
+      .services-intro-text-wrapper {
+        position: relative !important;
+        top: auto !important;
+        transform: none !important;
+        padding: 2rem 1.25rem;
+      }
+
+      .service-intro-p {
+        font-size: clamp(1.75rem, 6vw, 2.5rem) !important;
+      }
+
+      .services-bg-img {
+        transform: scale(1) !important;
+        opacity: 0.3;
+      }
+
+      .services-bg-img img {
+        transform: scale(1) !important;
+      }
+
+      .services-titles-container {
+        position: relative !important;
+        left: 0 !important;
+        clip-path: none !important;
+        height: auto !important;
+        overflow: visible !important;
+      }
+
+      .services-titles {
+        position: relative !important;
+        left: 0 !important;
+        width: 100% !important;
+        transform: none !important;
+        padding: 1.5rem 1.25rem !important;
+        gap: 1.25rem !important;
+      }
+
+      .services-titles p {
+        font-size: 1.75rem !important;
+        opacity: 1 !important;
+        white-space: normal !important;
+      }
+
+      .services-images {
+        display: none !important;
+      }
+
+      .services-header {
+        display: none !important;
+      }
+
+      /* ── EXPERIENCE SECTION ── */
+      .section_experience .grid-col-2 {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+      }
+
+      .section_experience .right-aligned {
+        padding: 2rem 1.25rem !important;
+      }
+
+      #animated-image {
+        position: relative !important;
+        width: 100% !important;
+        height: 300px !important;
+        max-height: 50vh;
+      }
+
+      /* ── EXPERTISE SECTION ── */
+      .section_expertise .grid-col-3 {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+      }
+
+      .section_expertise .heading-style-h2 {
+        font-size: clamp(1.75rem, 6vw, 2.5rem) !important;
+      }
+
+      .section_expertise .flex-col-default {
+        width: 100% !important;
+      }
+
+      .section_expertise .relative.radius-1-5 {
+        aspect-ratio: 4/3 !important;
+      }
+
+      /* ── TESTIMONIALS — vertical stack on mobile ── */
+      .testimonial-marquee {
+        height: 35svh !important;
+      }
+
+      .testimonial-marquee-wrapper {
+        width: 400% !important;
+      }
+
+      .testimonial-horizontal-scroll {
+        height: auto !important;
+        overflow: visible !important;
+      }
+
+      .testimonial-horizontal-scroll-wrapper {
+        width: 100% !important;
+        height: auto !important;
+        flex-direction: column !important;
+        transform: none !important;
+      }
+
+      .testimonial-horizontal-slide {
+        flex-direction: column-reverse !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        padding: 1.5rem 1.25rem !important;
+        gap: 1.25rem !important;
+      }
+
+      .testimonial-horizontal-spacer {
+        display: none !important;
+      }
+
+      .testimonial-horizontal-slide .testimonial-col {
+        width: 100% !important;
+        flex: none !important;
+      }
+
+      .testimonial-horizontal-slide .testimonial-col.content {
+        padding: 0 !important;
+      }
+
+      .testimonial-horizontal-slide .testimonial-col img {
+        width: 100% !important;
+        height: 250px !important;
+        object-fit: cover;
+        border-radius: 0.75rem;
+      }
+
+      .testimonial-horizontal-slide .heading-style-h4 {
+        font-size: 1.25rem !important;
+        line-height: 1.4 !important;
+      }
+
+      /* ── CTA BANNER — static on mobile ── */
+      .cta-section.cta-banner {
+        height: auto !important;
+        min-height: 80svh;
+      }
+
+      .cta-banner-img-container {
+        transform: scale(1) !important;
+      }
+
+      .cta-banner-intro-text-container {
+        position: relative !important;
+        top: auto !important;
+        transform: none !important;
+        padding: 2rem 1.25rem;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+      }
+
+      .cta-banner-intro-text {
+        display: block !important;
+        text-align: center !important;
+      }
+
+      .cta-banner-header {
+        width: 90% !important;
+      }
+
+      .heading-style-h2-large {
+        font-size: clamp(1.75rem, 6vw, 2.5rem) !important;
+      }
+
+      /* ── BLOG / TAB SECTION ── */
+      .section_tab .grid-col-2 {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+      }
+
+      .content-card_tab {
+        min-height: auto !important;
+      }
+
+      .content-card_tab img {
+        height: 200px !important;
+      }
+
+      .collection-list {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+      }
+
+      .tab-link {
+        flex-direction: column !important;
+      }
+
+      .tab-link img {
+        width: 100% !important;
+        height: 180px !important;
+        object-fit: cover;
+      }
+
+      .link-content-wrap_tab {
+        padding: 1rem !important;
+      }
+
+      /* ── FAQ SECTION ── */
+      .section_faqs .grid-col-2 {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+      }
+
+      .section_faqs .heading-style-h2 {
+        font-size: clamp(1.75rem, 6vw, 2.5rem) !important;
+        text-align: center;
+      }
+
+      .dropdown-toggle {
+        padding: 1rem !important;
+        min-height: 48px;
+      }
+
+      .heading-style-h6 {
+        font-size: 0.95rem !important;
+        line-height: 1.4 !important;
+      }
+
+      /* ── OPENING HOURS SECTION ── */
+      .section_opnhours .grid-col-2 {
+        display: flex !important;
+        flex-direction: column !important;
+      }
+
+      .section_opnhours .bg-primary-light {
+        padding: 2rem 1.25rem !important;
+      }
+
+      .section_opnhours .left-aligned {
+        padding: 2rem 1.25rem !important;
+      }
+
+      .time-wrapper {
+        gap: 0.5rem !important;
+      }
+
+      .time-card {
+        padding: 0.75rem 1rem !important;
+      }
+
+      /* ── FOOTER ── */
+      .footer .grid-col-3 {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+      }
+
+      .footer-links-wrapper {
+        flex-direction: column !important;
+        gap: 2rem !important;
+      }
+
+      .footer-bottom {
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+        align-items: center !important;
+        text-align: center;
+      }
+
+      .fullheading {
+        font-size: clamp(1.2rem, 9vw, 3rem) !important;
+        text-align: center;
+      }
+
+      /* ── TOUCH TARGETS — minimum 44px ── */
+      .button,
+      .w-button,
+      .nav-link,
+      .footer-link,
+      .faq .dropdown-toggle,
+      .nav-dropdown-link {
+        min-height: 44px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+      }
+
+      .button.btn-primary,
+      .button.btn-secondary {
+        padding: 0.875rem 1.5rem !important;
+        font-size: 0.9rem !important;
+        width: 100%;
+        justify-content: center !important;
+      }
+
+      /* ── GENERAL MOBILE TYPOGRAPHY ── */
+      .heading-style-h3 {
+        font-size: clamp(1.5rem, 5vw, 2rem) !important;
+        line-height: 1.2 !important;
+      }
+
+      .heading-style-h3-xxxlarge {
+        font-size: 1.75rem !important;
+      }
+
+      .heading-style-h4 {
+        font-size: 1.15rem !important;
+        line-height: 1.35 !important;
+      }
+
+      .heading-style-h5-medium {
+        font-size: 1rem !important;
+        line-height: 1.4 !important;
+      }
+
+      .paragraph {
+        line-height: 1.65 !important;
+      }
+
+      /* ── PADDING adjustments ── */
+      .padding-global {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+      }
+
+      .padding-section-large {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
+
+      .padding-section-xxlarge {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
+
+      /* ── PRELOADER mobile fix ── */
+      .hero {
+        width: 100% !important;
+      }
+
+      .progress-bar {
+        width: 50vw !important;
+      }
+    }
+
+    /* ── EXTRA SMALL phones (≤ 380px) ── */
+    @media (max-width: 380px) {
+      .hero_content-wrapper .heading-style-h1 {
+        font-size: 1.75rem !important;
+      }
+
+      .services-titles p {
+        font-size: 1.5rem !important;
+      }
+
+      .heading-style-h3 {
+        font-size: 1.35rem !important;
+      }
+
+      .testimonial-horizontal-slide .testimonial-col img {
+        height: 200px !important;
+      }
+    }
+  </style>
+
+  <!-- ═══════════════════════════════════════════════
+       MOBILE OPTIMIZATION — Comprehensive Overrides
+       ═══════════════════════════════════════════════ -->
+  <style>
+    /* ── GLOBAL MOBILE FIX: prevent horizontal overflow ── */
+    .services-section,
+    .cta-section {
+      width: 100% !important;
+      max-width: 100vw;
+    }
+
+    /* ── MOBILE: 768px and below ── */
+    @media (max-width: 768px) {
+
+      /* ── PERFORMANCE: reduce will-change on mobile ── */
+      .services-intro-text,
+      .services-img,
+      .services-bg-img img,
+      .cta-banner-img-container,
+      .cta-banner-intro-text,
+      .testimonial-marquee-images,
+      .testimonial-marquee-img {
+        will-change: auto !important;
+      }
+
+      /* ── HERO SECTION ── */
+      .section_hero .hero_content-wrapper {
+        padding: 0 1rem;
+      }
+
+      .hero_content-wrapper .heading-style-h1 {
+        font-size: clamp(2rem, 8vw, 3rem) !important;
+        line-height: 1.15 !important;
+      }
+
+      .hero_content-wrapper .paragraph {
+        font-size: 0.95rem !important;
+        line-height: 1.65 !important;
+      }
+
+      /* ── ABOUT SECTION ── */
+      .about-content-wrapper {
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+      }
+
+      .section_about .paragraph {
+        font-size: 0.95rem !important;
+        line-height: 1.7 !important;
+      }
+
+      /* ── SERVICES SECTION — simplified mobile layout ── */
+      .services-section {
+        height: auto !important;
+        min-height: 100svh;
+        padding: 3rem 0 !important;
+      }
+
+      .services-intro-text-wrapper {
+        position: relative !important;
+        top: auto !important;
+        transform: none !important;
+        padding: 2rem 1.25rem;
+      }
+
+      .service-intro-p {
+        font-size: clamp(1.75rem, 6vw, 2.5rem) !important;
+      }
+
+      .services-bg-img {
+        transform: scale(1) !important;
+        opacity: 0.3;
+      }
+
+      .services-bg-img img {
+        transform: scale(1) !important;
+      }
+
+      .services-titles-container {
+        position: relative !important;
+        left: 0 !important;
+        clip-path: none !important;
+        height: auto !important;
+        overflow: visible !important;
+      }
+
+      .services-titles {
+        position: relative !important;
+        left: 0 !important;
+        width: 100% !important;
+        transform: none !important;
+        padding: 1.5rem 1.25rem !important;
+        gap: 1.25rem !important;
+      }
+
+      .services-titles p {
+        font-size: 1.75rem !important;
+        opacity: 1 !important;
+        white-space: normal !important;
+      }
+
+      .services-images {
+        display: none !important;
+      }
+
+      .services-header {
+        display: none !important;
+      }
+
+      /* ── EXPERIENCE SECTION ── */
+      .section_experience .grid-col-2 {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+      }
+
+      .section_experience .right-aligned {
+        padding: 2rem 1.25rem !important;
+      }
+
+      #animated-image {
+        position: relative !important;
+        width: 100% !important;
+        height: 300px !important;
+        max-height: 50vh;
+      }
+
+      /* ── EXPERTISE SECTION ── */
+      .section_expertise .grid-col-3 {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+      }
+
+      .section_expertise .heading-style-h2 {
+        font-size: clamp(1.75rem, 6vw, 2.5rem) !important;
+      }
+
+      .section_expertise .flex-col-default {
+        width: 100% !important;
+      }
+
+      .section_expertise .relative.radius-1-5 {
+        aspect-ratio: 4/3 !important;
+      }
+
+      /* ── TESTIMONIALS — vertical stack on mobile ── */
+      .testimonial-marquee {
+        height: 35svh !important;
+      }
+
+      .testimonial-marquee-wrapper {
+        width: 400% !important;
+      }
+
+      .testimonial-horizontal-scroll {
+        height: auto !important;
+        overflow: visible !important;
+      }
+
+      .testimonial-horizontal-scroll-wrapper {
+        width: 100% !important;
+        height: auto !important;
+        flex-direction: column !important;
+        transform: none !important;
+      }
+
+      .testimonial-horizontal-slide {
+        flex-direction: column-reverse !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        padding: 1.5rem 1.25rem !important;
+        gap: 1.25rem !important;
+      }
+
+      .testimonial-horizontal-spacer {
+        display: none !important;
+      }
+
+      .testimonial-horizontal-slide .testimonial-col {
+        width: 100% !important;
+        flex: none !important;
+      }
+
+      .testimonial-horizontal-slide .testimonial-col.content {
+        padding: 0 !important;
+      }
+
+      .testimonial-horizontal-slide .testimonial-col img {
+        width: 100% !important;
+        height: 250px !important;
+        object-fit: cover;
+        border-radius: 0.75rem;
+      }
+
+      .testimonial-horizontal-slide .heading-style-h4 {
+        font-size: 1.25rem !important;
+        line-height: 1.4 !important;
+      }
+
+      /* ── CTA BANNER — static on mobile ── */
+      .cta-section.cta-banner {
+        height: auto !important;
+        min-height: 80svh;
+      }
+
+      .cta-banner-img-container {
+        transform: scale(1) !important;
+      }
+
+      .cta-banner-intro-text-container {
+        position: relative !important;
+        top: auto !important;
+        transform: none !important;
+        padding: 2rem 1.25rem;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+      }
+
+      .cta-banner-intro-text {
+        display: block !important;
+        text-align: center !important;
+      }
+
+      .cta-banner-header {
+        width: 90% !important;
+      }
+
+      .heading-style-h2-large {
+        font-size: clamp(1.75rem, 6vw, 2.5rem) !important;
+      }
+
+      /* ── BLOG / TAB SECTION ── */
+      .section_tab .grid-col-2 {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+      }
+
+      .content-card_tab {
+        min-height: auto !important;
+      }
+
+      .content-card_tab img {
+        height: 200px !important;
+      }
+
+      .collection-list {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+      }
+
+      .tab-link {
+        flex-direction: column !important;
+      }
+
+      .tab-link img {
+        width: 100% !important;
+        height: 180px !important;
+        object-fit: cover;
+      }
+
+      .link-content-wrap_tab {
+        padding: 1rem !important;
+      }
+
+      /* ── FAQ SECTION ── */
+      .section_faqs .grid-col-2 {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+      }
+
+      .section_faqs .heading-style-h2 {
+        font-size: clamp(1.75rem, 6vw, 2.5rem) !important;
+        text-align: center;
+      }
+
+      .dropdown-toggle {
+        padding: 1rem !important;
+        min-height: 48px;
+      }
+
+      .heading-style-h6 {
+        font-size: 0.95rem !important;
+        line-height: 1.4 !important;
+      }
+
+      /* ── OPENING HOURS SECTION ── */
+      .section_opnhours .grid-col-2 {
+        display: flex !important;
+        flex-direction: column !important;
+      }
+
+      .section_opnhours .bg-primary-light {
+        padding: 2rem 1.25rem !important;
+      }
+
+      .section_opnhours .left-aligned {
+        padding: 2rem 1.25rem !important;
+      }
+
+      .time-wrapper {
+        gap: 0.5rem !important;
+      }
+
+      .time-card {
+        padding: 0.75rem 1rem !important;
+      }
+
+      /* ── FOOTER ── */
+      .footer .grid-col-3 {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+      }
+
+      .footer-links-wrapper {
+        flex-direction: column !important;
+        gap: 2rem !important;
+      }
+
+      .footer-bottom {
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+        align-items: center !important;
+        text-align: center;
+      }
+
+      .fullheading {
+        font-size: clamp(1.2rem, 9vw, 3rem) !important;
+        text-align: center;
+      }
+
+      /* ── TOUCH TARGETS — minimum 44px ── */
+      .button,
+      .w-button,
+      .nav-link,
+      .footer-link,
+      .faq .dropdown-toggle,
+      .nav-dropdown-link {
+        min-height: 44px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+      }
+
+      .button.btn-primary,
+      .button.btn-secondary {
+        padding: 0.875rem 1.5rem !important;
+        font-size: 0.9rem !important;
+        width: 100%;
+        justify-content: center !important;
+      }
+
+      /* ── GENERAL MOBILE TYPOGRAPHY ── */
+      .heading-style-h3 {
+        font-size: clamp(1.5rem, 5vw, 2rem) !important;
+        line-height: 1.2 !important;
+      }
+
+      .heading-style-h3-xxxlarge {
+        font-size: 1.75rem !important;
+      }
+
+      .heading-style-h4 {
+        font-size: 1.15rem !important;
+        line-height: 1.35 !important;
+      }
+
+      .heading-style-h5-medium {
+        font-size: 1rem !important;
+        line-height: 1.4 !important;
+      }
+
+      .paragraph {
+        line-height: 1.65 !important;
+      }
+
+      /* ── PADDING adjustments ── */
+      .padding-global {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+      }
+
+      .padding-section-large {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
+
+      .padding-section-xxlarge {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
+
+      /* ── PRELOADER mobile fix ── */
+      .hero {
+        width: 100% !important;
+      }
+
+      .progress-bar {
+        width: 50vw !important;
+      }
+    }
+
+    /* ── EXTRA SMALL phones (≤ 380px) ── */
+    @media (max-width: 380px) {
+      .hero_content-wrapper .heading-style-h1 {
+        font-size: 1.75rem !important;
+      }
+
+      .services-titles p {
+        font-size: 1.5rem !important;
+      }
+
+      .heading-style-h3 {
+        font-size: 1.35rem !important;
+      }
+
+      .testimonial-horizontal-slide .testimonial-col img {
+        height: 200px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+        /* Correct Google Fonts import */
+        @import url('https://fonts.googleapis.com/css2?family=Presque+Elegant:wght@400;500;600;700&display=swap');
+
+        html.wf-design-mode .preloader,
+        html.wf-editor-mode .preloader {
+          display: none !important;
+        }
+
+        /* Make text look crisper and more legible in all browsers */
+        body {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+          font-family: "Presque Elegant", Arial, sans-serif;
+        }
+
+        /* Focus state style for keyboard navigation for the focusable elements */
+        *[tabindex]:focus-visible,
+        input[type="file"]:focus-visible {
+          outline: 0.125rem solid #4d65ff;
+          outline-offset: 0.125rem;
+        }
+
+        /* Set color style to inherit */
+        .inherit-color * {
+          color: inherit;
+        }
+
+        /* Get rid of top margin on first element in any rich text element */
+        .w-richtext> :not(div):first-child,
+        .w-richtext>div:first-child> :first-child {
+          margin-top: 0 !important;
+        }
+
+        /* Get rid of bottom margin on last element in any rich text element */
+        .w-richtext>:last-child,
+        .w-richtext ol li:last-child,
+        .w-richtext ul li:last-child {
+          margin-bottom: 0 !important;
+        }
+
+
+        /* Make sure containers never lose their center alignment */
+        .container-medium,
+        .container-small,
+        .container-large {
+          margin-right: auto !important;
+          margin-left: auto !important;
+        }
+
+        /* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+        /*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+        /* Apply "..." after 3 lines of text */
+        .text-style-3lines {
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+
+        /* Apply "..." after 2 lines of text */
+        .text-style-2lines {
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+
+        /* These classes are never overwritten */
+        .hide {
+          display: none !important;
+        }
+
+        @media screen and (max-width: 991px) {
+
+          .hide,
+          .hide-tablet {
+            display: none !important;
+          }
+        }
+
+        @media screen and (max-width: 767px) {
+          .hide-mobile-landscape {
+            display: none !important;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          .hide-mobile {
+            display: none !important;
+          }
+        }
+
+        .margin-0 {
+          margin: 0rem !important;
+        }
+
+        .padding-0 {
+          padding: 0rem !important;
+        }
+
+        .spacing-clean {
+          padding: 0rem !important;
+          margin: 0rem !important;
+        }
+
+        .margin-top {
+          margin-right: 0rem !important;
+          margin-bottom: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-top {
+          padding-right: 0rem !important;
+          padding-bottom: 0rem !important;
+          padding-left: 0rem !important;
+        }
+
+        .margin-right {
+          margin-top: 0rem !important;
+          margin-bottom: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-right {
+          padding-top: 0rem !important;
+          padding-bottom: 0rem !important;
+          padding-left: 0rem !important;
+        }
+
+        .margin-bottom {
+          margin-top: 0rem !important;
+          margin-right: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-bottom {
+          padding-top: 0rem !important;
+          padding-right: 0rem !important;
+          padding-left: 0rem !important;
+        }
+
+        .margin-left {
+          margin-top: 0rem !important;
+          margin-right: 0rem !important;
+          margin-bottom: 0rem !important;
+        }
+
+        .padding-left {
+          padding-top: 0rem !important;
+          padding-right: 0rem !important;
+          padding-bottom: 0rem !important;
+        }
+
+        .margin-horizontal {
+          margin-top: 0rem !important;
+          margin-bottom: 0rem !important;
+        }
+
+        .padding-horizontal {
+          padding-top: 0rem !important;
+          padding-bottom: 0rem !important;
+        }
+
+        .margin-vertical {
+          margin-right: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-vertical {
+          padding-right: 0rem !important;
+          padding-left: 0rem !important;
+        }
+      </style>
+    </div>
+    <div data-preloader="true" class="preloader">
+      <div class="hero">
+        <div class="progress-bar">
+          <p class="paragraph text-weight-medium uppercase dark-heading-clr">loading</p>
+          <p class="paragraph text-weight-medium dark-heading-clr">/<span id="counter">0</span></p>
+        </div>
+        <div class="w-embed">
+          <style>
+            .hero {
+              position: relative;
+              width: 100vw;
+              height: 100svh;
+
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              clip-path: polygon(0% 45%, 0% 45%, 0% 55%, 0% 55%);
+              will-change: clip-path;
+            }
+
+            .progress-bar {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              width: 25vw;
+              padding: 2em;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              color: #ffbb00;
+            }
+
+
+            @media (max-width: 900px) {
+
+
+              .progress-bar {
+                justify-content: flex-end;
+              }
+
+              .progress-bar p:nth-child(1) {
+                display: none;
+              }
+
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+    <main class="main-wrapper">
+      <section class="section_hero">
+        <div class="navbar-no-shadow">
+          <div data-w-id="7284dcd9-70c0-f2a8-012d-8f1b504415e4" data-animation="default" data-collapse="medium"
+            data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+            <div class="container-large">
+              <div class="navbar-wrapper"><a href="/" aria-current="page" class="navbar-brand w-nav-brand w--current">
+                  <div class="heading-style-h4 dark-text">Alluring Occasions</div>
+                </a>
+                <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
+                  <ul role="list" class="nav-menu w-list-unstyled">
+                    <li><a href="/" aria-current="page" class="nav-link w--current">Home</a></li>
+                    <li><a href="/about" class="nav-link">About</a></li>
+                    <li>
+                      <div data-hover="true" data-delay="0" class="nav-dropdown w-dropdown">
+                        <div class="nav-dropdown-toggle w-dropdown-toggle">
+                          <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div><a href="/service"
+                            class="nav-link">Services</a>
+                        </div>
+                        <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list"><a
+                            href="/service/laser-hair-removal"
+                            class="nav-dropdown-link w-dropdown-link">Laser Hair Removal</a><a
+                            href="/service/oxygeneo-3-in-1-facial"
+                            class="nav-dropdown-link w-dropdown-link">Oxygeneo 3in<span class="_1">1</span> Facial</a><a
+                            href="/service/fire-ice-facial"
+                            class="nav-dropdown-link w-dropdown-link">Fire &amp; Ice Facial</a><a
+                            href="/service/microneedling"
+                            class="nav-dropdown-link w-dropdown-link">Microneedling</a><a
+                            href="/service/dermaplane"
+                            class="nav-dropdown-link w-dropdown-link">Dermaplane</a></nav>
+                      </div>
+                    </li>
+                    <li><a href="/contact" class="nav-link">Contact</a></li>
+                  </ul>
+                </nav>
+                <div class="menu-button w-nav-button">
+                  <div class="w-icon-nav-menu"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-spacer"></div>
+        <div class="padding-global padding-section-large size-full">
+          <div class="container-large size-full">
+            <div class="hero_content-wrapper">
+              <div class="max-width-large">
+                <h1 class="heading-style-h1 capital hero-text">Where Beauty Meets Modern Wellness</h1>
+              </div>
+              <div class="max-width-medium margin-left">
+                <div class="margin-bottom medium">
+                  <p class="paragraph hero-text">At Alluring Occasions, your comfort, satisfaction, and celebration are our top
+                    priorities. Whether you&#x27;re looking to remove unwanted hair or indulge in a facial treatment,
+                    we’re here to provide personalized, professional services tailored to your unique needs.</p>
+                </div><a href="/contact" class="button btn-primary w-button">Book Appointment</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_about">
+        <div class="padding-global padding-section-large">
+          <div class="container-large">
+            <div class="about-content-wrapper">
+              <div class="no-shrink">
+                <h2 class="heading-style-h3 dark-text text-animate">About Us</h2>
+              </div>
+              <div class="max-width-large">
+                <div class="margin-bottom large">
+                  <p class="paragraph p-left-align dark-text text-animate">Alluring Occasions is your premier destination for
+                    laser hair removal and advanced facial treatments in Downtown Vancouver. Our skilled team of
+                    certified laser hair removal technicians and medical aestheticians is dedicated to helping you
+                    achieve smooth, radiant skin with the utmost care and precision.<br />‍<br />We specialize in
+                    delivering safe, virtually painless hair removal using cutting-edge technology, including the
+                    Soprano Ice machine, known for its effective and comfortable treatments for all skin types. In
+                    addition to hair removal, we offer a range of facial services designed to rejuvenate and enhance
+                    your natural beauty.</p>
+                </div><a href="/contact" class="button btn-secondary w-button">Book Appointment</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services-section">
+        <div class="w-embed">
+          <style>
+            .services-section img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+
+
+
+            .services-section {
+              position: relative;
+              width: 100vw;
+              height: 100svh;
+              overflow: hidden;
+            }
+
+            .services-intro-text-wrapper {
+              position: absolute;
+              width: 100%;
+              top: 50%;
+              transform: translateY(-50%);
+              display: flex;
+              gap: 0.5rem;
+            }
+
+            .services-intro-text {
+              flex: 1;
+              position: relative;
+              will-change: transform;
+            }
+
+            .services-intro-text:nth-child(1) {
+              display: flex;
+              justify-content: flex-end;
+            }
+
+            .services-bg-img {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              transform: scale(0);
+              will-change: transform;
+            }
+
+            .services-bg-img img {
+              transform: scale(1.5);
+              will-change: transform;
+            }
+
+            .services-titles-container {
+              position: absolute;
+              top: 0;
+              left: 15vw;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              clip-path: polygon(50svh 0px,
+                  0px 50%,
+                  50svh 100%,
+                  100% calc(100% + 100svh),
+                  100% -100svh);
+              --services-before-opacity: 0;
+              --services-after-opacity: 0;
+            }
+
+            .services-titles-container::before,
+            .services-titles-container::after {
+              content: "";
+              position: absolute;
+              width: 100svh;
+              height: 2.5px;
+              background: #471a1f;
+              pointer-events: none;
+              transition: opacity 0.3s ease;
+              z-index: 10;
+            }
+
+            .services-titles-container::before {
+              top: 0;
+              left: 0;
+              transform: rotate(-45deg) translate(-7rem);
+              opacity: var(--services-before-opacity);
+            }
+
+            .services-titles-container::after {
+              bottom: 0;
+              left: 0;
+              transform: rotate(45deg) translate(-7rem);
+              opacity: var(--services-after-opacity);
+            }
+
+            .services-titles {
+              position: relative;
+              left: 15%;
+              width: 75%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 5rem;
+              transform: translateY(100%);
+              z-index: 2;
+            }
+
+            .services-titles p {
+              color: #471a1f;
+              opacity: 0.25;
+              transition: opacity 0.3s ease;
+              font-size: 4rem;
+            }
+
+            .services-titles p:first-child {
+              opacity: 1;
+            }
+
+            .services-images {
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 50%;
+              min-width: 300px;
+              height: 100%;
+              z-index: 1;
+              pointer-events: none;
+            }
+
+            .services-img {
+              position: absolute;
+              width: 200px;
+              height: 150px;
+              will-change: transform;
+              opacity: 0;
+            }
+
+            .services-header {
+              position: absolute;
+              top: 50%;
+              left: 10%;
+              transform: translateY(-50%);
+              color: #fff;
+              transition: opacity 0.3s ease;
+              z-index: 2;
+              opacity: 0;
+            }
+
+            @media (max-width: 1000px) {
+              h1 {
+                font-size: 2rem;
+              }
+
+              .services-titles p {
+                font-size: 2rem;
+              }
+
+              .services-titles-container {
+                clip-path: none;
+              }
+
+              .services-titles-container::before,
+              .services-titles-container::after {
+                display: none;
+              }
+
+              .services-titles {
+                left: 0;
+              }
+
+              .services-header {
+                display: none;
+              }
+            }
+          </style>
+        </div>
+        <div class="services-intro-text-wrapper">
+          <div class="services-intro-text">
+            <p class="service-intro-p">Our Signature</p>
+          </div>
+          <div class="services-intro-text">
+            <p class="service-intro-p">Treatments</p>
+          </div>
+        </div>
+        <div class="services-bg-img"><img
+            src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69246688f6175f557a6aa3df_96f9c70eacd51e90d273686db3a2e64b_929-1920x1080.webp"
+            loading="lazy" sizes="100vw"
+            srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69246688f6175f557a6aa3df_96f9c70eacd51e90d273686db3a2e64b_929-1920x1080-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69246688f6175f557a6aa3df_96f9c70eacd51e90d273686db3a2e64b_929-1920x1080-p-800.webp 800w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69246688f6175f557a6aa3df_96f9c70eacd51e90d273686db3a2e64b_929-1920x1080-p-1080.webp 1080w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69246688f6175f557a6aa3df_96f9c70eacd51e90d273686db3a2e64b_929-1920x1080.webp 1226w"
+            alt="Woman receiving facial treatment" id="services-bg-main" /></div>
+        <div class="services-titles-container">
+          <div class="services-titles">
+            <p data-img="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69397937b66cfd37e9519f7a_gemini-2.5-flash-image_chnage_color_with_tinits_and_shades_of_EED2D5-0-min.webp"
+              class="heading-style-h3-xxxlarge dark-heading-clr">Laser Hair Removal</p>
+            <p data-img="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693978b1a331b1089b48b8cd_cosmetologist-beautician-in-pink-gloves-making-fa-2025-01-07-12-16-38-utc-min.webp"
+              class="heading-style-h3-xxxlarge dark-heading-clr">Dermaplane</p>
+            <p data-img="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69397911c6a6e7b3c8842051_nanobana-generated-image%20(3)-min.webp"
+              class="heading-style-h3-xxxlarge dark-heading-clr">Microneedling</p>
+            <p data-img="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693ab4fbadedf6e36496d2f6_Lucid_Origin_luxury_fire_and_ice_facial_concept_contrast_of_wa_2.jpg"
+              class="heading-style-h3-xxxlarge dark-heading-clr">Ice Fire Facial</p>
+            <p data-img="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693979c0f7f1c0193f1003ac_cfb33ac8cc0e0e2fa8c4bd9143d643f0_nanobana-generated-image%20%282%29%201%20%281%29.webp"
+              class="heading-style-h3-xxxlarge dark-heading-clr">Oxygeno 3 in 1</p>
+          </div>
+        </div>
+        <div class="services-images">
+          <div class="services-img"><img
+              src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69397937b66cfd37e9519f7a_gemini-2.5-flash-image_chnage_color_with_tinits_and_shades_of_EED2D5-0-min.webp"
+              loading="lazy" width="336" sizes="200px" alt="Laser Hair Bg"
+              srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69397937b66cfd37e9519f7a_gemini-2.5-flash-image_chnage_color_with_tinits_and_shades_of_EED2D5-0-min-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69397937b66cfd37e9519f7a_gemini-2.5-flash-image_chnage_color_with_tinits_and_shades_of_EED2D5-0-min-p-800.webp 800w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69397937b66cfd37e9519f7a_gemini-2.5-flash-image_chnage_color_with_tinits_and_shades_of_EED2D5-0-min-p-1080.webp 1080w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69397937b66cfd37e9519f7a_gemini-2.5-flash-image_chnage_color_with_tinits_and_shades_of_EED2D5-0-min.webp 1344w"
+              class="img-cover" /></div>
+          <div class="services-img"><img
+              src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693978b1a331b1089b48b8cd_cosmetologist-beautician-in-pink-gloves-making-fa-2025-01-07-12-16-38-utc-min.webp"
+              loading="lazy" sizes="200px"
+              srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693978b1a331b1089b48b8cd_cosmetologist-beautician-in-pink-gloves-making-fa-2025-01-07-12-16-38-utc-min-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693978b1a331b1089b48b8cd_cosmetologist-beautician-in-pink-gloves-making-fa-2025-01-07-12-16-38-utc-min-p-800.webp 800w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693978b1a331b1089b48b8cd_cosmetologist-beautician-in-pink-gloves-making-fa-2025-01-07-12-16-38-utc-min-p-1080.webp 1080w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693978b1a331b1089b48b8cd_cosmetologist-beautician-in-pink-gloves-making-fa-2025-01-07-12-16-38-utc-min-p-1600.webp 1600w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693978b1a331b1089b48b8cd_cosmetologist-beautician-in-pink-gloves-making-fa-2025-01-07-12-16-38-utc-min-p-2000.webp 2000w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693978b1a331b1089b48b8cd_cosmetologist-beautician-in-pink-gloves-making-fa-2025-01-07-12-16-38-utc-min-p-2600.webp 2600w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693978b1a331b1089b48b8cd_cosmetologist-beautician-in-pink-gloves-making-fa-2025-01-07-12-16-38-utc-min-p-3200.webp 3200w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693978b1a331b1089b48b8cd_cosmetologist-beautician-in-pink-gloves-making-fa-2025-01-07-12-16-38-utc-min.webp 3872w"
+              alt="spa treatment" class="img-cover" /></div>
+          <div class="services-img"><img
+              src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69397911c6a6e7b3c8842051_nanobana-generated-image%20(3)-min.webp"
+              loading="lazy" sizes="200px"
+              srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69397911c6a6e7b3c8842051_nanobana-generated-image%20(3)-min-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69397911c6a6e7b3c8842051_nanobana-generated-image%20(3)-min-p-800.webp 800w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69397911c6a6e7b3c8842051_nanobana-generated-image%20(3)-min.webp 1024w"
+              alt="spa treatment" class="img-cover" /></div>
+          <div class="services-img"><img
+              src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692bd989c9f121d730a5dcf6_f8ac4c4f2e980f2f04ff2784e3280d79_Placeholder%20Image-3-min.webp"
+              loading="lazy" alt="Medical treatment" class="img-cover" /></div>
+          <div class="services-img"><img
+              src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693979c0f7f1c0193f1003ac_cfb33ac8cc0e0e2fa8c4bd9143d643f0_nanobana-generated-image%20%282%29%201%20%281%29.webp"
+              loading="lazy" sizes="200px"
+              srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693979c0f7f1c0193f1003ac_cfb33ac8cc0e0e2fa8c4bd9143d643f0_nanobana-generated-image%20%282%29%201%20%281%29-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693979c0f7f1c0193f1003ac_cfb33ac8cc0e0e2fa8c4bd9143d643f0_nanobana-generated-image%20%282%29%201%20%281%29-p-800.webp 800w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693979c0f7f1c0193f1003ac_cfb33ac8cc0e0e2fa8c4bd9143d643f0_nanobana-generated-image%20%282%29%201%20%281%29.webp 1024w"
+              alt="spa treatment" class="img-cover" /></div>
+        </div>
+        <div class="services-header">
+          <p class="heading-style-h3 dark-text">Treatments</p>
+        </div>
+      </section>
+      <section id="scroll-experience" class="section_experience dark-bg">
+        <div class="grid-col-2">
+          <div id="w-node-ce6380a1-b515-d71d-e7d2-5c9873fc6633-50939050" class="right-aligned">
+            <div class="max-width-medium-2 flex-24">
+              <h2 class="heading-style-h3 dark-heading-clr text-animate">A Luxury Experience Designed Around You</h2>
+              <div>
+                <div>
+                  <p class="paragraph dark-heading-clr text-animate">At Alluring Occasions, your event is treated with
+                    clinical precision and genuine care. Our licensed aestheticians use FDA-approved technologies to
+                    ensure every facial and laser session is safe, effective, and designed for visible
+                    improvement.<br /><br />Your safety and comfort come first. Our space is clean, calm, and
+                    women-focused built to make every visit relaxing while maintaining strict hygiene standards. We keep
+                    our recommendations honest and transparent, guiding you only toward treatments that will truly
+                    benefit your skin.<br /><br />Here, results matter. From smoother texture to brighter complexion,
+                    every service is designed to give you long-lasting, noticeable change you can feel confident about.
+                  </p>
+                </div>
+              </div><a href="/contact" class="button btn-secondary w-button">Book Appointment</a>
+            </div>
+          </div><img
+            src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692a874c586d62cfb63f8b5a_Lucid_Origin_ultraluxury_salon__spa_interior_soft_white_and_bl_0-min.webp"
+            loading="lazy" sizes="(max-width: 705px) 100vw, 705px"
+            srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692a874c586d62cfb63f8b5a_Lucid_Origin_ultraluxury_salon__spa_interior_soft_white_and_bl_0-min-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692a874c586d62cfb63f8b5a_Lucid_Origin_ultraluxury_salon__spa_interior_soft_white_and_bl_0-min.webp 705w"
+            alt="Ultraluxury spa interior with soft white and blue accents" id="animated-image"
+            class="img-cover absolute-50 w-node-ff73a814-24ae-8166-71de-6b2b948a0b87-50939050" />
+        </div>
+      </section>
+      <section class="section_expertise">
+        <div class="padding-global padding-section-large">
+          <div class="container-medium">
+            <div class="expertise-wrapper">
+              <div class="max-width-small">
+                <div class="margin-bottom medium">
+                  <h2 class="heading-style-h2 text-align-center text-animate">Where Expertise Meets Indulgence</h2>
+                </div>
+                <p class="paragraph p-center-align text-animate">We blend science and serenity to deliver meaningful
+                  results every time</p>
+              </div>
+              <div class="spacer-large"></div>
+              <div class="grid-col-3 mid-fill">
+                <div data-w-id="a492bb6f-9536-6952-af7c-ae9955c4f492" class="flex-col-default">
+                  <div class="relative bg">
+                    <div class="full-overlay-absolute primary-text">
+                      <h3 class="heading-style-h6 dark-heading-clr text-animate">Our Philosophy</h3>
+                      <div class="centre">
+                        <h4 class="heading-style-h4 text-animate">Crafted for Calm</h4>
+                        <p class="heading-style-h6 text-animate">We create more than treatments we create space to
+                          breathe.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-card"><img
+                      src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692bcd7e8ba6149cbec10477_Frame%2020.svg"
+                      loading="lazy" alt="stars" class="star" />
+                    <h3 class="heading-style-h3-large dark-text text-animate">Community Love</h3>
+                    <p class="paragraph dark-text text-animate">Alluring Occasions is more than a service — it's a part of our
+                      clients’ self-care rituals. From first-time guests to loyal regulars, our community keeps coming
+                      back for the warmth, the care, and the calm.</p>
+                  </div>
+                </div>
+                <div data-w-id="a492bb6f-9536-6952-af7c-ae9955c4f4a3" class="relative radius-1-5 align-col-centre"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692a94fac059107c313f7161_0cf0688be3153f462e8c99e6c6089c47_nano-banana-2025-11-20T10-30-01%202-min.webp"
+                    loading="lazy" alt="Nano banana" class="img-cover" />
+                  <div class="progressive-blur-copy">
+                    <p class="paragraph ph-small text-animate">Whether you’re seeking smooth skin, a radiant glow, or
+                      renewed confidence, we’re here to help you look and feel your best.</p>
+                  </div>
+                  <div class="progressive-blur">
+                    <div class="w-embed">
+                      <style>
+                        .progressive-blur {
+                          width: 100%;
+                          height: 50%;
+                          position: absolute;
+                          z-index: 1;
+                          bottom: 0 !important;
+                          opacity: 1;
+                          transform: rotate(180deg);
+
+                          /*  where the real magic happens  */
+                          backdrop-filter: blur(30px);
+                          -webkit-backdrop-filter: blur(30px);
+
+                          background: rgba(225, 225, 225, 0.05);
+
+                          mask-image: linear-gradient(rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0) 100%);
+
+                          -webkit-mask-image: linear-gradient(rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 0) 100%);
+
+                        }
+                      </style>
+                    </div>
+                  </div>
+                </div>
+                <div data-w-id="a492bb6f-9536-6952-af7c-ae9955c4f4aa" class="flex-col-default">
+                  <div class="primary-light-bg radius-1-5 pd--75">
+                    <div class="margin-bottom medium">
+                      <h3 class="heading-style-h6 text-animate">Real Result</h3>
+                    </div>
+                    <div class="div-block-3">
+                      <p class="heading-style-h4 text-animate"><span class="_1">1</span>0+</p>
+                      <p class="paragraph text-animate">Years of Expertise<br /></p>
+                    </div>
+                    <div class="div-block-3">
+                      <p class="heading-style-h4 text-animate">50+</p>
+                      <p class="paragraph text-animate">Treatments Per Week<br /></p>
+                    </div>
+                    <div class="div-block-3">
+                      <p class="heading-style-h4 text-animate">500+</p>
+                      <p class="paragraph text-animate">Happy Clients<br /></p>
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <div class="small-card bg-img">
+                      <div class="max-width-xxxsmall text-align-center">
+                        <div class="margin-bottom small">
+                          <p class="paragraph text-animate">Our Promise to You</p>
+                        </div>
+                        <p class="paragraph small text-animate">This isn’t just a spa treatment it’s a reset for your
+                          mind, body, and soul.</p>
+                      </div><a href="/contact" class="button btn-primary w-button">Book Appointment</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_carousel">
+        <div class="container-xlarge padding-horizontal default">
+          <div class="margin-bottom xxxlarge">
+            <div class="align-col-centre">
+              <div class="max-width-xlarge">
+                <div class="margin-bottom medium">
+                  <h2 class="heading-style-h2 text-animate">Loved by Women Across the City</h2>
+                </div>
+                <p class="paragraph p-center-align text-animate">We’ve helped hundreds of women feel comfortable,
+                  confident, and beautifully themselves.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="testimonial-css w-embed">
+            <style>
+              @import url("https://fonts.cdnfonts.com/css/pp-neue-montreal");
+
+              :root {
+                --testimonial-light: #FCF7F8;
+                --testimonial-dark: #471A1F;
+              }
+
+              * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+              }
+
+              body {
+                font-family: "PP Neue Montreal", sans-serif;
+                overflow-x: hidden;
+              }
+
+              .testimonial-marquee-img .testimonial-pin img {
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+                backface-visibility: hidden;
+                transform: translateZ(0);
+              }
+
+              .img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+
+              .testimonial-container {
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                will-change: background-color;
+              }
+
+              .testimonial-marquee {
+                position: relative;
+                width: 100%;
+                height: 50svh;
+                overflow: hidden;
+              }
+
+              .testimonial-marquee-wrapper {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-5deg);
+                width: 150%;
+                height: 100%;
+              }
+
+              .testimonial-marquee-images {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-75%, -50%);
+                width: 200%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem;
+                will-change: transform;
+              }
+
+              .testimonial-marquee-img {
+                flex: 1;
+                width: 100%;
+                aspect-ratio: 5/3;
+              }
+
+              .testimonial-horizontal-scroll {
+                position: relative;
+                width: 100%;
+                height: 100svh;
+                overflow: hidden;
+              }
+
+              .testimonial-horizontal-scroll-wrapper {
+                position: relative;
+                width: 400%;
+                height: 100svh;
+                display: flex;
+                will-change: transform;
+              }
+
+              .testimonial-horizontal-slide {
+                flex: 1;
+                height: 100%;
+                display: flex;
+                gap: 2rem;
+
+              }
+
+
+
+              .testimonial-horizontal-slide .testimonial-col:nth-child(1) {
+
+                width: 50%;
+              }
+
+              .testimonial-horizontal-slide .testimonial-col:nth-child(2) {
+
+                width: 50%;
+              }
+
+
+
+              .testimonial-horizontal-slide .testimonial-col img {
+                width: 100%;
+              }
+
+              .testimonial-horizontal-slide .testimonial-col img {
+                height: 100%;
+              }
+
+
+              @media (max-width: 1000px) {
+                .testimonial-marquee-wrapper {
+                  width: 300%;
+                }
+
+                .testimonial-horizontal-slide {
+                  padding: 4rem;
+                  flex-direction: column-reverse;
+                  gap: 2rem;
+                }
+
+                .testimonial-horizontal-slide .testimonial-col:nth-child(2) {
+                  flex: 1;
+                  width: 100%;
+
+                }
+
+                .testimonial-horizontal-slide .testimonial-col:nth-child(1) {
+                  align-items: flex-start;
+                  padding: 0;
+                  flex: 1;
+                  width: 100%;
+                }
+
+
+
+                .testimonial-horizontal-slide .testimonial-col img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+
+              @media (max-width: 768px) {
+                .testimonial-horizontal-slide {
+                  padding: 1.25rem;
+                  flex-direction: column-reverse;
+                  gap: 2rem;
+                }
+              }
+            </style>
+          </div>
+          <section class="testimonial-marquee">
+            <div class="testimonial-marquee-wrapper">
+              <div class="testimonial-marquee-images">
+                <div class="testimonial-marquee-img"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692bd20a0c30b12ea741f575_9de5a9342ccd5aa3f9f9d4135fcc42c4_Placeholder%20Image-7-min.webp"
+                    loading="lazy" alt="Medical treatment" class="img-cover" /></div>
+                <div class="testimonial-marquee-img"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692bd20a006b6004ba612b67_e627eafc2396ab87e40e78dbbf99b54a_Placeholder%20Image-4-min.webp"
+                    loading="lazy" alt="Medical treatment" class="img-cover" /></div>
+                <div class="testimonial-marquee-img"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692bd87c2ec611d87f3f544e_591bb25169bd72eb9562d34823baca7c_Placeholder%20Image-min.webp"
+                    loading="lazy" alt="Medical treatment" class="img-cover" /></div>
+                <div class="testimonial-marquee-img"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692bd989c9f121d730a5dcf6_f8ac4c4f2e980f2f04ff2784e3280d79_Placeholder%20Image-3-min.webp"
+                    loading="lazy" alt="Medical treatment" class="img-cover" /></div>
+                <div class="testimonial-marquee-img"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692bd98a3c64349b970c2b86_be0b19e254e3bd06d796ea9b14dbe27a_Placeholder%20Image-1-min.webp"
+                    loading="lazy" alt="Medical treatment" class="img-cover" /></div>
+                <div class="testimonial-marquee-img"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692bd98a6de36a94c28ad1e9_38d34a96d89c06416e6bba27d88246df_Placeholder%20Image-2-min.webp"
+                    loading="lazy" alt="Medical treatment" class="img-cover" /></div>
+                <div class="testimonial-marquee-img testimonial-pin"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693ad01086de0cd4d5ab0862_f6734cd928acf341932fd0b4dc6c54ec_Lucid_Origin_A_luxurious_skincare_treatment_room_designed_in_s_0.webp"
+                    loading="lazy"
+                    sizes="(max-width: 479px) 45vw, (max-width: 767px) 46vw, (max-width: 1919px) 47vw, 24vw"
+                    srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693ad01086de0cd4d5ab0862_f6734cd928acf341932fd0b4dc6c54ec_Lucid_Origin_A_luxurious_skincare_treatment_room_designed_in_s_0-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693ad01086de0cd4d5ab0862_f6734cd928acf341932fd0b4dc6c54ec_Lucid_Origin_A_luxurious_skincare_treatment_room_designed_in_s_0-p-800.webp 800w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693ad01086de0cd4d5ab0862_f6734cd928acf341932fd0b4dc6c54ec_Lucid_Origin_A_luxurious_skincare_treatment_room_designed_in_s_0-p-1080.webp 1080w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/693ad01086de0cd4d5ab0862_f6734cd928acf341932fd0b4dc6c54ec_Lucid_Origin_A_luxurious_skincare_treatment_room_designed_in_s_0.webp 1600w"
+                    alt="spa" class="img-cover" /></div>
+                <div class="testimonial-marquee-img"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692bd20a0c30b12ea741f575_9de5a9342ccd5aa3f9f9d4135fcc42c4_Placeholder%20Image-7-min.webp"
+                    loading="lazy" alt="Medical treatment" class="img-cover" /></div>
+                <div class="testimonial-marquee-img"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692bd20a006b6004ba612b67_e627eafc2396ab87e40e78dbbf99b54a_Placeholder%20Image-4-min.webp"
+                    loading="lazy" alt="Medical treatment" class="img-cover" /></div>
+                <div class="testimonial-marquee-img"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692bd20aa7f3f13fed38b5e8_577e01a94d803a4ea4ab7280cf3c9bff_Placeholder%20Image-6-min.webp"
+                    loading="lazy" alt="Medical treatment" class="img-cover" /></div>
+                <div class="testimonial-marquee-img"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692bd87c2ec611d87f3f544e_591bb25169bd72eb9562d34823baca7c_Placeholder%20Image-min.webp"
+                    loading="lazy" alt="Medical treatment" class="img-cover" /></div>
+                <div class="testimonial-marquee-img"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692bd989c9f121d730a5dcf6_f8ac4c4f2e980f2f04ff2784e3280d79_Placeholder%20Image-3-min.webp"
+                    loading="lazy" alt="Medical treatment" class="img-cover" /></div>
+                <div class="testimonial-marquee-img"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692bd98a3c64349b970c2b86_be0b19e254e3bd06d796ea9b14dbe27a_Placeholder%20Image-1-min.webp"
+                    loading="lazy" alt="Medical treatment" class="img-cover" /></div>
+              </div>
+            </div>
+          </section>
+          <section class="testimonial-horizontal-scroll">
+            <div class="testimonial-horizontal-scroll-wrapper">
+              <div class="testimonial-horizontal-slide testimonial-horizontal-spacer"></div>
+              <div class="testimonial-horizontal-slide bg-primary-light">
+                <div class="testimonial-col content">
+                  <h3 class="heading-style-h4 dark-text text-animate">My skin has never looked this smooth and fresh.
+                  </h3>
+                  <div class="spacer-small"></div>
+                  <p class="paragraph dark-text"> I booked a dermaplaning session and was amazed at how instantly bright
+                    and soft my skin looked. The aesthetician explained every step, made me feel completely comfortable,
+                    and recommended a simple routine that actually works. I’m already excited for my next visit.</p>
+                  <div class="spacer-xsmall"></div>
+                  <p class="paragraph dark-text"> — Ayesha R.</p>
+                  <div class="spacer-medium-4"></div><a href="/contact" class="button btn-primary w-button">Say Yes to
+                    Smooth, Glowing Skin</a>
+                </div>
+                <div class="testimonial-col"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6932740d806cd97ea3af612c_Lucid_Origin_luxury_spa_treatment_scene_woman_receiving_facial_0%203-min.webp"
+                    loading="lazy"
+                    sizes="(max-width: 479px) 92vw, (max-width: 991px) 95vw, (max-width: 1919px) 87vw, 50vw"
+                    srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6932740d806cd97ea3af612c_Lucid_Origin_luxury_spa_treatment_scene_woman_receiving_facial_0%203-min-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6932740d806cd97ea3af612c_Lucid_Origin_luxury_spa_treatment_scene_woman_receiving_facial_0%203-min.webp 738w"
+                    alt="Woman receiving facial treatment" /></div>
+              </div>
+              <div class="testimonial-horizontal-slide dark-bg">
+                <div class="testimonial-col content">
+                  <h3 class="heading-style-h4 dark-heading-clr text-animate">Professional, hygienic, and results-driven
+                    highly impressed.</h3>
+                  <div class="spacer-small"></div>
+                  <p class="paragraph dark-heading-clr"> I had my event planned by Alluring Occasions,
+                    and the difference in my skin texture and fine lines is honestly incredible. The team guided me
+                    through the entire process, and the clinic’s cleanliness gave me so much confidence. This is now the
+                    only place I trust with my skin.</p>
+                  <div class="spacer-xsmall"></div>
+                  <p class="paragraph dark-heading-clr">— Maria K.</p>
+                  <div class="spacer-medium-4"></div><a href="/contact" class="button btn-secondary w-button">Say Yes to
+                    Smooth, Glowing Skin</a>
+                </div>
+                <div class="testimonial-col"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6932741170f1a976dbf336b2_Lucid_Origin_luxury_spa_treatment_scene_woman_receiving_facial_0%203%20(1)-min.webp"
+                    loading="lazy"
+                    sizes="(max-width: 479px) 92vw, (max-width: 991px) 95vw, (max-width: 1919px) 87vw, 50vw"
+                    srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6932741170f1a976dbf336b2_Lucid_Origin_luxury_spa_treatment_scene_woman_receiving_facial_0%203%20(1)-min-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6932741170f1a976dbf336b2_Lucid_Origin_luxury_spa_treatment_scene_woman_receiving_facial_0%203%20(1)-min.webp 738w"
+                    alt="Woman receiving facial treatment" /></div>
+              </div>
+              <div class="testimonial-horizontal-slide bg-primary-light">
+                <div class="testimonial-col content">
+                  <h3 class="heading-style-h4 dark-text text-animate">Painless laser hair removal with amazing long-term
+                    results.</h3>
+                  <div class="spacer-small"></div>
+                  <p class="paragraph dark-text">I used to be nervous about laser treatments, but their advanced machine
+                    made the experience quick, gentle, and totally manageable. After a few sessions, the reduction in
+                    hair growth is dramatic. The staff is friendly, respectful, and very knowledgeable. I recommend them
+                    to every woman I know.</p>
+                  <div class="spacer-xsmall"></div>
+                  <p class="paragraph dark-text"> — Hira S.</p>
+                  <div class="spacer-medium-4"></div><a href="/contact" class="button btn-primary w-button">Say Yes to
+                    Smooth, Glowing Skin</a>
+                </div>
+                <div class="testimonial-col"><img
+                    src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69327416c11e79227be05926_Lucid_Origin_luxury_spa_treatment_scene_woman_receiving_facial_0%203%20(2)-min.webp"
+                    loading="lazy"
+                    sizes="(max-width: 479px) 92vw, (max-width: 991px) 95vw, (max-width: 1919px) 87vw, 50vw"
+                    srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69327416c11e79227be05926_Lucid_Origin_luxury_spa_treatment_scene_woman_receiving_facial_0%203%20(2)-min-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/69327416c11e79227be05926_Lucid_Origin_luxury_spa_treatment_scene_woman_receiving_facial_0%203%20(2)-min.webp 738w"
+                    alt="Woman receiving facial treatment" /></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <div class="dark-bg">
+        <div class="cta-css w-embed">
+          <style>
+            @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+
+            body {
+              font-family: "Instrument Serif", sans-serif;
+            }
+
+            .img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              will-change: transform;
+            }
+
+            .cta-img img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+            .cta-section {
+              position: relative;
+              width: 100vw;
+              height: 100svh;
+              overflow: hidden;
+            }
+
+            .cta-hero,
+            .cta-outro {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .cta-hero h2,
+            .cta-outro h2 {
+              width: 100%;
+              text-align: center;
+              padding: 0 2.5rem;
+            }
+
+            .cta-banner-img-container {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              will-change: transform;
+            }
+
+            .cta-banner-img-container .cta-img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              will-change: transform;
+            }
+
+            .cta-banner-img-container .cta-img.cta-mask {
+              -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Ccircle cx='400' cy='400' r='350' fill='white'/%3E%3C/svg%3E");
+              mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Ccircle cx='400' cy='400' r='350' fill='white'/%3E%3C/svg%3E");
+              -webkit-mask-size: cover;
+              mask-size: cover;
+              -webkit-mask-position: center;
+              mask-position: center;
+            }
+
+            .cta-banner-header {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 75%;
+              text-align: center;
+
+              z-index: 2;
+            }
+
+            .cta-banner-intro-text-container {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 100%;
+              display: flex;
+              gap: 0.5rem;
+              z-index: 10;
+            }
+
+            .cta-banner-intro-text {
+              flex: 1;
+              position: relative;
+              will-change: transform;
+            }
+
+            .cta-banner-intro-text:nth-child(1) {
+              display: flex;
+              justify-content: flex-end;
+            }
+
+            @media (max-width: 1000px) {
+              h1 {
+                font-size: 2.5rem;
+              }
+
+              .cta-hero h1,
+              .cta-outro h1,
+              .cta-banner-header {
+                width: calc(100% - 4rem);
+              }
+            }
+          </style>
+        </div>
+        <section class="cta-section cta-banner">
+          <div class="cta-banner-img-container">
+            <div class="cta-img"><img
+                src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c.webp"
+                loading="lazy" sizes="100vw"
+                srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-800.webp 800w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-1080.webp 1080w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c.webp 1600w"
+                alt="face" /></div>
+            <div class="cta-img cta-mask"><img
+                src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c.webp"
+                loading="lazy" sizes="100vw"
+                srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-800.webp 800w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-1080.webp 1080w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c.webp 1600w"
+                alt="face" /></div>
+            <div class="cta-img cta-mask"><img
+                src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c.webp"
+                loading="lazy" sizes="100vw"
+                srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-800.webp 800w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-1080.webp 1080w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c.webp 1600w"
+                alt="face" /></div>
+            <div class="cta-img cta-mask"><img
+                src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c.webp"
+                loading="lazy" sizes="100vw"
+                srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-800.webp 800w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-1080.webp 1080w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c.webp 1600w"
+                alt="face" /></div>
+            <div class="cta-img cta-mask"><img
+                src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c.webp"
+                loading="lazy" sizes="100vw"
+                srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-800.webp 800w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-1080.webp 1080w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c.webp 1600w"
+                alt="face" /></div>
+            <div class="cta-img cta-mask"><img
+                src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c.webp"
+                loading="lazy" sizes="100vw"
+                srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-800.webp 800w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-1080.webp 1080w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c.webp 1600w"
+                alt="face" /></div>
+            <div class="cta-img cta-mask"><img
+                src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c.webp"
+                loading="lazy" sizes="100vw"
+                srcset="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-500.webp 500w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-800.webp 800w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c-p-1080.webp 1080w, https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/6939afe3a73b2a4942352b39_a6c8455b77839407f82daa82c8781620aa970d2c.webp 1600w"
+                alt="face" /></div>
+            <div class="cta-banner-header">
+              <h3 class="heading-style-h3 dark-text text-align-center">Let’s Begin Your Glow Journey</h3>
+            </div>
+          </div>
+          <div class="cta-banner-intro-text-container">
+            <div class="cta-banner-intro-text">
+              <h2 class="heading-style-h2-large dark-heading-clr">Where Luxury</h2>
+            </div>
+            <div class="cta-banner-intro-text">
+              <h2 class="heading-style-h2-large dark-heading-clr">Meets Serenity</h2>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="section_tab">
+        <div class="padding-global padding-section-xxlarge">
+          <div class="w-layout-blockcontainer container-large w-container">
+            <div class="blog-wrapper">
+              <div class="max-width-small">
+                <div class="margin-bottom medium">
+                  <h2 class="heading-style-h2 text-align-center text-animate">Beauty Backed <br />by Expertise</h2>
+                </div>
+                <p class="paragraph p-center-align text-animate">Trusted insights, advanced treatments, and refined
+                  care.</p>
+              </div>
+              <div class="spacer-large"></div>
+              <div id="blogs" class="grid-col-2">
+                <div class="w-dyn-list">
+                  <div role="list" class="size-full w-dyn-items">
+                    <div role="listitem" class="size-full w-dyn-item"><a
+                        data-w-id="97441deb-8a3f-5a48-ac42-2ee2c73ee394" style="opacity:0" href="/blog/dermaplaning"
+                        class="content-card_tab bg-primary-light w-inline-block"><img loading="lazy"
+                          src="https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/69392a2eac82eb2904b66c5f_woman-getting-skin-cleaning-2025-02-11-13-56-28-utc-min.webp"
+                          alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 726.625px, 939.15625px"
+                          srcset="https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/69392a2eac82eb2904b66c5f_woman-getting-skin-cleaning-2025-02-11-13-56-28-utc-min-p-500.webp 500w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/69392a2eac82eb2904b66c5f_woman-getting-skin-cleaning-2025-02-11-13-56-28-utc-min-p-800.webp 800w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/69392a2eac82eb2904b66c5f_woman-getting-skin-cleaning-2025-02-11-13-56-28-utc-min-p-1080.webp 1080w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/69392a2eac82eb2904b66c5f_woman-getting-skin-cleaning-2025-02-11-13-56-28-utc-min-p-1600.webp 1600w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/69392a2eac82eb2904b66c5f_woman-getting-skin-cleaning-2025-02-11-13-56-28-utc-min-p-2000.webp 2000w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/69392a2eac82eb2904b66c5f_woman-getting-skin-cleaning-2025-02-11-13-56-28-utc-min-p-2600.webp 2600w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/69392a2eac82eb2904b66c5f_woman-getting-skin-cleaning-2025-02-11-13-56-28-utc-min-p-3200.webp 3200w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/69392a2eac82eb2904b66c5f_woman-getting-skin-cleaning-2025-02-11-13-56-28-utc-min.webp 8256w"
+                          class="img-cover max" />
+                        <div class="content-wrapper_tab">
+                          <div class="content-wrap_tab">
+                            <div class="paragraph medium">Dermaplaning</div>
+                            <h3 class="heading-style-h5-medium">Why It’s the Ultimate Skin Prep Treatment</h3>
+                            <p class="paragraph">Dermaplaning is the secret to smooth, radiant, and flawless skin.
+                              Unlike traditional exfoliation...</p>
+                          </div>
+                        </div>
+                      </a></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="collection-list-wrapper-2 w-dyn-list">
+                    <div data-w-id="6b6c24ef-f2f7-78ca-ba87-4d0f833c0d32" style="opacity:0" role="list"
+                      class="collection-list w-dyn-items">
+                      <div role="listitem" class="collection-item-2 w-dyn-item"><a
+                          data-w-id="f628101b-e3eb-3892-d785-5936c5673bba" href="/blog/laser-hair-removal"
+                          class="tab-link bg-primary-light dark-text w-inline-block"><img loading="lazy"
+                            src="https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/693a6a97103babd9ed2481a0_nanobana-generated-image%20(1)-min.webp"
+                            alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 726.625px, 939.15625px"
+                            srcset="https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/693a6a97103babd9ed2481a0_nanobana-generated-image%20(1)-min-p-500.webp 500w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/693a6a97103babd9ed2481a0_nanobana-generated-image%20(1)-min-p-800.webp 800w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/693a6a97103babd9ed2481a0_nanobana-generated-image%20(1)-min-p-1080.webp 1080w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/693a6a97103babd9ed2481a0_nanobana-generated-image%20(1)-min.webp 1248w"
+                            class="img-cover radius-0-5rem" />
+                          <div id="w-node-f628101b-e3eb-3892-d785-5936c5673bbc-50939050" class="link-content-wrap_tab">
+                            <div class="content-wrap_tab">
+                              <div class="paragraph medium">Laser Hair Removal</div>
+                              <h3 class="heading-style-h5-medium dark-text text-animate">Permanent Smoothness Without
+                                the Hassle</h3>
+                              <p class="paragraph medium text-animate">Shaving, waxing, and threading can be tiresome
+                                and irritating. Laser hair removal is the modern...</p>
+                            </div>
+                          </div>
+                        </a></div>
+                      <div role="listitem" class="collection-item-2 w-dyn-item"><a
+                          data-w-id="f628101b-e3eb-3892-d785-5936c5673bba" href="/blog/oxygeneo-3-in-1-facial"
+                          class="tab-link bg-primary-light dark-text w-inline-block"><img loading="lazy"
+                            src="https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/6939285190b7bfcf99be91ae_nanobana-generated-image%20(4)-min.png"
+                            alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 726.625px, 939.15625px"
+                            srcset="https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/6939285190b7bfcf99be91ae_nanobana-generated-image%20(4)-min-p-500.png 500w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/6939285190b7bfcf99be91ae_nanobana-generated-image%20(4)-min-p-800.png 800w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/6939285190b7bfcf99be91ae_nanobana-generated-image%20(4)-min.png 1024w"
+                            class="img-cover radius-0-5rem" />
+                          <div id="w-node-f628101b-e3eb-3892-d785-5936c5673bbc-50939050" class="link-content-wrap_tab">
+                            <div class="content-wrap_tab">
+                              <div class="paragraph medium">OxyGeneo 3-in-1 Facial</div>
+                              <h3 class="heading-style-h5-medium dark-text text-animate">The Complete Skincare Solution
+                              </h3>
+                              <p class="paragraph medium text-animate">OxyGeneo 3-in-1 Facial is the ultimate treatment
+                                for radiant, healthy skin. It exfoliates...</p>
+                            </div>
+                          </div>
+                        </a></div>
+                      <div role="listitem" class="collection-item-2 w-dyn-item"><a
+                          data-w-id="f628101b-e3eb-3892-d785-5936c5673bba" href="/blog/fire-ice-facial"
+                          class="tab-link bg-primary-light dark-text w-inline-block"><img loading="lazy"
+                            src="https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/69392695d7584722cb0fdd51_Lucid_Origin_luxury_fire_and_ice_facial_concept_contrast_of_wa_1-min.jpg"
+                            alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 726.625px, 939.15625px"
+                            srcset="https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/69392695d7584722cb0fdd51_Lucid_Origin_luxury_fire_and_ice_facial_concept_contrast_of_wa_1-min-p-500.jpg 500w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/69392695d7584722cb0fdd51_Lucid_Origin_luxury_fire_and_ice_facial_concept_contrast_of_wa_1-min-p-800.jpg 800w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/69392695d7584722cb0fdd51_Lucid_Origin_luxury_fire_and_ice_facial_concept_contrast_of_wa_1-min-p-1080.jpg 1080w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/69392695d7584722cb0fdd51_Lucid_Origin_luxury_fire_and_ice_facial_concept_contrast_of_wa_1-min.jpg 1200w"
+                            class="img-cover radius-0-5rem" />
+                          <div id="w-node-f628101b-e3eb-3892-d785-5936c5673bbc-50939050" class="link-content-wrap_tab">
+                            <div class="content-wrap_tab">
+                              <div class="paragraph medium">Fire &amp; Ice Facial</div>
+                              <h3 class="heading-style-h5-medium dark-text text-animate">Rejuvenation Without Downtime
+                              </h3>
+                              <p class="paragraph medium text-animate">The iS Clinical Fire &amp; Ice Facial is a
+                                powerful resurfacing treatment that combines...</p>
+                            </div>
+                          </div>
+                        </a></div>
+                      <div role="listitem" class="collection-item-2 w-dyn-item"><a
+                          data-w-id="f628101b-e3eb-3892-d785-5936c5673bba" href="/blog/microneedling"
+                          class="tab-link bg-primary-light dark-text w-inline-block"><img loading="lazy"
+                            src="https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/6939264020390d212ecd8acc_nanobana-generated-image%20(2)-min.png"
+                            alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 726.625px, 939.15625px"
+                            srcset="https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/6939264020390d212ecd8acc_nanobana-generated-image%20(2)-min-p-500.png 500w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/6939264020390d212ecd8acc_nanobana-generated-image%20(2)-min-p-800.png 800w, https://cdn.prod.website-files.com/692c04d00f824d3dc6752b84/6939264020390d212ecd8acc_nanobana-generated-image%20(2)-min.png 1024w"
+                            class="img-cover radius-0-5rem" />
+                          <div id="w-node-f628101b-e3eb-3892-d785-5936c5673bbc-50939050" class="link-content-wrap_tab">
+                            <div class="content-wrap_tab">
+                              <div class="paragraph medium">Microneedling</div>
+                              <h3 class="heading-style-h5-medium dark-text text-animate">How Tiny Punctures Deliver Big
+                                Results</h3>
+                              <p class="paragraph medium text-animate">Microneedling, also known as collagen induction
+                                therapy, is one of the most effective ways to rejuvenate skin...</p>
+                            </div>
+                          </div>
+                        </a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_faqs">
+        <div class="padding-global padding-section-large">
+          <div class="w-layout-blockcontainer container-large w-container">
+            <div class="grid-col-2 _1-col-small faq">
+              <div id="w-node-c2dfa60e-b82d-0558-f296-0cfe51b919bc-51b919b8">
+                <h2 class="heading-style-h2">Questions? <br />We’ve Got You.</h2>
+              </div>
+              <div data-w-id="c2dfa60e-b82d-0558-f296-0cfe51b919bf" class="accordion-wrapper">
+                <div data-hover="false" data-delay="0" class="faq bg-primary-light w-dropdown">
+                  <div class="dropdown-toggle w-dropdown-toggle">
+                    <h3 class="heading-style-h6">Is laser hair removal safe for all skin types?</h3><img
+                      src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692be16e531365046c90f545_Vector%20(2).svg"
+                      loading="lazy" alt="Arrow down" class="arrow" />
+                  </div>
+                  <nav class="dropdown-list w-dropdown-list">
+                    <p class="paragraph">Yes, we use advanced Soprano ICE technology that is safe and effective for all
+                      skin tones, with minimal discomfort and no downtime.</p>
+                  </nav>
+                </div>
+                <div data-hover="false" data-delay="0" class="faq bg-primary-light w-dropdown">
+                  <div class="dropdown-toggle w-dropdown-toggle">
+                    <h3 class="heading-style-h6">How long does the brightening facial take?</h3><img
+                      src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692be16e531365046c90f545_Vector%20(2).svg"
+                      loading="lazy" alt="Arrow down" class="arrow" />
+                  </div>
+                  <nav class="dropdown-list w-dropdown-list">
+                    <p class="paragraph">The treatment lasts approximately 60 minutes.</p>
+                  </nav>
+                </div>
+                <div data-hover="false" data-delay="0" data-w-id="c2dfa60e-b82d-0558-f296-0cfe51b919c0"
+                  class="faq bg-primary-light w-dropdown">
+                  <div class="dropdown-toggle w-dropdown-toggle">
+                    <h3 class="heading-style-h6">Is this facial suitable for sensitive skin?</h3><img
+                      src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692be16e531365046c90f545_Vector%20(2).svg"
+                      loading="lazy" alt="Arrow down" class="arrow" />
+                  </div>
+                  <nav class="dropdown-list w-dropdown-list">
+                    <p class="paragraph">Yes, it is gentle and suitable for all skin types.</p>
+                  </nav>
+                </div>
+                <div data-hover="false" data-delay="0" class="faq bg-primary-light w-dropdown">
+                  <div class="dropdown-toggle w-dropdown-toggle">
+                    <h3 class="heading-style-h6">How often should i get this facial</h3><img
+                      src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692be16e531365046c90f545_Vector%20(2).svg"
+                      loading="lazy" alt="Arrow down" class="arrow" />
+                  </div>
+                  <nav class="dropdown-list w-dropdown-list">
+                    <p class="paragraph">We recommend every 4 to 6 weeks for best results.</p>
+                  </nav>
+                </div>
+                <div data-hover="false" data-delay="0" class="faq bg-primary-light w-dropdown">
+                  <div class="dropdown-toggle w-dropdown-toggle">
+                    <h3 class="heading-style-h6">Is there any downtime after the facial?</h3><img
+                      src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/692be16e531365046c90f545_Vector%20(2).svg"
+                      loading="lazy" alt="Arrow down" class="arrow" />
+                  </div>
+                  <nav class="dropdown-list w-dropdown-list">
+                    <p class="paragraph">No, there is little to no downtime. You can return to your daily activities
+                      immediately after the treatment.</p>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_opnhours none">
+        <div class="grid-col-2 _1-col-small faq">
+          <div class="bg-primary-light padding-huge">
+            <div class="schedulin-wrapper">
+              <h4 class="heading-style-h6 dark-text">Opening Hours</h4>
+              <div class="time-wrapper">
+                <div class="time-card bg-primary-medium">
+                  <p class="paragraph small">Monday</p>
+                  <p class="paragraph small">9am-9pm</p>
+                </div>
+                <div class="time-card bg-primary-medium">
+                  <p class="paragraph small">Monday</p>
+                  <p class="paragraph small">9am-9pm</p>
+                </div>
+                <div class="time-card bg-primary-medium">
+                  <p class="paragraph small">Monday</p>
+                  <p class="paragraph small">9am-9pm</p>
+                </div>
+                <div class="time-card bg-primary-medium">
+                  <p class="paragraph small">Monday</p>
+                  <p class="paragraph small">9am-9pm</p>
+                </div>
+                <div class="time-card bg-primary-medium">
+                  <p class="paragraph small">Monday</p>
+                  <p class="paragraph small">9am-9pm</p>
+                </div>
+                <div class="time-card bg-primary-medium">
+                  <p class="paragraph small">Monday</p>
+                  <p class="paragraph small">9am-9pm</p>
+                </div>
+              </div>
+              <div class="centre"><a href="/contact" class="button btn-secondary w-button">Book Appointment</a></div>
+            </div>
+          </div>
+          <div id="w-node-a331d738-1c6d-b905-9844-42cdab0d560c-50939050" class="left-aligned">
+            <div class="max-width-medium flex-24">
+              <h2 class="heading-style-h3 dark-text text-animate">A Luxury Experience Designed Around You</h2>
+              <p class="paragraph dark-text text-animate">From the moment you walk into our spa, everything is curated
+                for your comfort the ambiance, the treatments, and the results. We blend medical-grade care with a soft,
+                feminine, luxury environment, ensuring you feel safe, relaxed, and cared for.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-layout-blockcontainer container-xlarge w-container"></div>
+      </section>
+    </main>
+    <footer class="footer dark-bg dark-heading-clr">
+      <div class="padding-footer">
+        <div class="w-layout-blockcontainer container-large w-container">
+          <div class="footer-links-wrapper">
+            <div class="max-width-xxsmall tab-full">
+              <div class="margin-bottom small">
+                <h3 class="heading-style-h3 dark-heading-clr">About</h3>
+              </div>
+              <p class="paragraph">At Alluring Occasions, we combine creative vision with personalized care to help
+                you achieve smoother, brighter, and healthier skin.</p>
+            </div>
+            <div class="max-width-x1large">
+              <div class="grid-col-3">
+                <div class="footer-links-wrap">
+                  <h5 class="heading-style-h5">Contact us</h5><a href="mailto:luxurialaserspa@gmail.com"
+                    class="footer-link">luxurialaserspa@gmail.com</a><a href="tel:+17786559032"
+                    class="footer-link">(778) 655-9032</a>
+                </div>
+                <div class="footer-links-wrap">
+                  <h5 class="heading-style-h5">Treatments</h5><a
+                    href="https://luxuria-laser-spa.webflow.io/service/laser-hair-removal" class="footer-link">Laser
+                    Hair Removal</a><a href="https://luxuria-laser-spa.webflow.io/service/oxygeneo-3-in-1-facial"
+                    class="footer-link">Oxygeneo 3in<span class="_1">1</span> Facial</a><a
+                    href="https://luxuria-laser-spa.webflow.io/service/fire-ice-facial" class="footer-link">Fire &amp;
+                    Ice Facial</a><a href="https://luxuria-laser-spa.webflow.io/service/microneedling"
+                    class="footer-link">Microneedling</a><a
+                    href="https://luxuria-laser-spa.webflow.io/service/dermaplane" class="footer-link">Dermaplane</a>
+                </div>
+                <div class="footer-links-wrap">
+                  <h5 class="heading-style-h5">Quick LIinks</h5><a href="/about" class="footer-link">About</a><a
+                    href="#" class="footer-link">Faqs</a><a href="#" class="footer-link">Booking policy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-layout-blockcontainer container-xlarge w-container">
+          <h2 class="fullheading">alluring occasions</h2>
+          <div class="footer-bottom">
+            <p class="paragraph">Site by k<span class="_1">1</span>3.ca</p>
+            <div class="btm-link-wrapper_footer"><a href="#" class="footer-link small">Privacy Policy</a><a href="#"
+                class="footer-link small">Terms &amp; Condition</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="none w-embed">
+        <style>
+          .fullheading {
+            font-size: clamp(2rem, 9vw, 9rem);
+            /* Default for desktop */
+          }
+
+          @media screen and (min-width: 1920px) {
+            .fullheading {
+              font-size: clamp(2rem, 9vw, 12rem);
+            }
+          }
+
+
+          @media screen and (max-width: 480px) {
+
+            /* Small phones */
+            .fullheading {
+              font-size: clamp(1.2rem, 9vw, 5rem);
+              /* Smaller max to prevent line break */
+            }
+          }
+        </style>
+      </div>
+    </footer>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=692314f68d9d31cc50938feb"
+    type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/js/webflow.schunk.36b8fb49256177c8.js"
+    type="text/javascript" integrity="sha384-4abIlA5/v7XaW1HMXKBgnUuhnjBYJ/Z9C1OSg4OhmVw9O3QeHJ/qJqFBERCDPv7G"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/js/webflow.schunk.23c93c32be5f35c9.js"
+    type="text/javascript" integrity="sha384-SI/C1tNp6HQ71bzPDHQo7PvMP6ls3MbOgwo50/2seu0DcWvBjSvimxOCTD0XkVaZ"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.prod.website-files.com/692314f68d9d31cc50938feb/js/webflow.be40f57d.ae5b5c46dde005e7.js"
+    type="text/javascript" integrity="sha384-QfSC7bLezrDaT3Qvgju0a9D5fQAtdRsJYJ14ssMC79ycnRWxHyaRCZ7koLRTd10O"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.14.2/gsap.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.14.2/SplitText.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.14.2/ScrollTrigger.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.14.2/Flip.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.14.2/CustomEase.min.js" type="text/javascript"></script>
+  <script type="text/javascript">gsap.registerPlugin(SplitText, ScrollTrigger, Flip, CustomEase);</script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    document.querySelectorAll('.reveal-overlay').forEach((overlay) => {
+      gsap.to(overlay, {
+        scaleX: 0,
+        duration: 0.5,
+        ease: 'linear',
+        scrollTrigger: {
+          trigger: overlay.closest('.reveal-container'),
+          start: 'top bottom',
+          end: 'bottom center',
+
+        }
+      });
+    });
+  </script>
+  <!-- Duplicate Lenis init and GSAP loads removed for mobile performance -->
+
+  <script>
+    Webflow.push(function () {
+      gsap.registerPlugin(ScrollTrigger, Flip, SplitText);
+
+      // ===== LENIS (SAFE + STABLE) =====
+      // ===== LENIS (DESKTOP ONLY) =====
+      // Lenis runs ONLY on >= 768px
+      // Mobile uses native scroll (fixes stuck-on-reload issue)
+      (function initLenisDesktopOnly() {
+        const shouldUseLenis = window.matchMedia("(min-width: 768px)").matches;
+
+        // MOBILE → native scroll
+        if (!shouldUseLenis) {
+          window.addEventListener("load", () => {
+            try { ScrollTrigger.refresh(); } catch (e) { }
+          });
+          return;
+        }
+
+        // DESKTOP → Lenis
+        if (!window.__LENIS__) {
+          const isFirefox = navigator.userAgent.toLowerCase().includes("firefox");
+
+          const lenis = window.__LENIS__ = new Lenis({
+            smooth: true,
+            lerp: isFirefox ? 0.07 : 0.1,          // Chrome normal, Firefox thoda softer
+            wheelMultiplier: isFirefox ? 0.7 : 1,  // Firefox wheel thoda kam sensitive
+            smoothTouch: false
+          });
+
+
+          function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+          }
+
+          window.addEventListener("load", () => {
+            ScrollTrigger.scrollerProxy(document.documentElement, {
+              scrollTop(value) {
+                return arguments.length
+                  ? lenis.scrollTo(value)
+                  : window.scrollY;
+              },
+              getBoundingClientRect() {
+                return {
+                  top: 0,
+                  left: 0,
+                  width: window.innerWidth,
+                  height: window.innerHeight
+                };
+              }
+            });
+
+            lenis.on("scroll", ScrollTrigger.update);
+
+            lenis.start();
+            requestAnimationFrame(raf);
+
+            setTimeout(() => {
+              ScrollTrigger.refresh();
+            }, 50);
+          });
+        }
+      })();
+
+
+
+
+      // Shorthand selectors (keep yours)
+      const $ = sel => document.querySelector(sel);
+      const $$ = sel => gsap.utils.toArray(sel);
+
+      // ===== MOBILE DETECTION =====
+      const isMobile = window.innerWidth < 768;
+
+
+      // ===== SERVICES SECTION =====
+      // Config and elements
+      // ============================================
+      // DYNAMIC SERVICES ANIMATION - Works with ANY number of items!
+      // ============================================
+
+      const servicesTitlesContainer = document.querySelector(".services-titles");
+      const servicesImagesContainer = document.querySelector(".services-images");
+      const servicesHeader = document.querySelector(".services-header");
+      const servicesTitlesContainerElement = document.querySelector(".services-titles-container");
+      const servicesIntroTextElements = document.querySelectorAll(".services-intro-text");
+      const servicesTitleElements = servicesTitlesContainer.querySelectorAll("p");
+      let servicesImageElements = Array.from(
+        servicesImagesContainer.querySelectorAll(".services-img")
+      );
+
+      // 🔒 FORCE 1:1 mapping with titles (Webflow-safe)
+      if (servicesImageElements.length < servicesTitleElements.length) {
+        const originalImages = [...servicesImageElements];
+
+        while (servicesImageElements.length < servicesTitleElements.length) {
+          originalImages.forEach(img => {
+            if (servicesImageElements.length < servicesTitleElements.length) {
+              const clone = img.cloneNode(true);
+              clone.style.opacity = "0";
+              servicesImagesContainer.appendChild(clone);
+              servicesImageElements.push(clone);
+            }
+          });
+        }
+      }
+
+      // Build array of service items (name + image URL)
+      const servicesItems = Array.from(servicesTitleElements).map(title => ({
+        name: title.textContent,
+        img: title.getAttribute('data-img')
+      }));
+
+      // ============================================
+      // DYNAMIC CONFIGURATION based on item count
+      // ============================================
+      const itemCount = servicesItems.length;
+
+      const servicesConfig = {
+        // Dynamic gap calculation: auto-adjusts based on number of items
+        // More items = smaller gap to fit them all smoothly
+        gap: Math.min(0.12, 1 / (itemCount * 2)),
+        speed: 0.3,
+        arcRadius: 500
+      };
+
+      // Calculate total animation duration needed
+      // Last item starts at: (itemCount - 1) * gap
+      // Last item ends at: (itemCount - 1) * gap + speed
+      const totalAnimationDuration = (itemCount - 1) * servicesConfig.gap + servicesConfig.speed;
+
+      // Dynamic scroll height calculation
+      // Formula ensures smooth animation regardless of item count
+      const dynamicScrollHeight = Math.max(
+        window.innerHeight * (2 + itemCount * 0.8), // Scales with item count
+        window.innerHeight * 5 // Minimum baseline
+      );
+
+      console.log(`📊 Animation Setup:
+  • Items: ${itemCount}
+  • Gap: ${servicesConfig.gap.toFixed(3)}
+  • Total Duration: ${totalAnimationDuration.toFixed(3)}
+  • Scroll Height: ${(dynamicScrollHeight / window.innerHeight).toFixed(1)}vh
+`);
+
+      let servicesCurrentActiveIndex = 0;
+
+      // Background image element and initial setup
+      const bgImgEl = document.querySelector(".services-bg-img img");
+      if (bgImgEl) {
+        // Force immediate loading (override Webflow lazy-load)
+        bgImgEl.loading = "eager";
+        // Set initial image src and srcset
+        if (servicesItems[0] && servicesItems[0].img) {
+          bgImgEl.src = servicesItems[0].img;
+          bgImgEl.srcset = servicesItems[0].img;
+        }
+      }
+
+      // Geometry for Bezier path of service images
+      const servicesContainerWidth = window.innerWidth * 0.3;
+      const servicesContainerHeight = window.innerHeight;
+      const servicesArcStartX = servicesContainerWidth - 220;
+      const servicesArcStartY = -200;
+      const servicesArcEndY = servicesContainerHeight + 200;
+      const servicesArcControlPointX = servicesArcStartX + servicesConfig.arcRadius;
+      const servicesArcControlPointY = servicesContainerHeight / 2;
+
+      function getServicesBezierPosition(t) {
+        const x = (1 - t) * (1 - t) * servicesArcStartX +
+          2 * (1 - t) * t * servicesArcControlPointX +
+          t * t * servicesArcStartX;
+        const y = (1 - t) * (1 - t) * servicesArcStartY +
+          2 * (1 - t) * t * servicesArcControlPointY +
+          t * t * servicesArcEndY;
+        return { x, y };
+      }
+
+      function getServicesImgProgressState(index, overallProgress) {
+        const startTime = index * servicesConfig.gap;
+        const endTime = startTime + servicesConfig.speed;
+        if (overallProgress < startTime) return -1;
+        if (overallProgress > endTime) return 2;
+        return (overallProgress - startTime) / servicesConfig.speed;
+      }
+
+      // ============================================
+      // DYNAMIC ScrollTrigger with calculated end distance
+      // ============================================
+      if (!isMobile) ScrollTrigger.create({
+        trigger: ".services-section",
+        start: "top top",
+        end: `+=${dynamicScrollHeight}px`, // 🎯 DYNAMIC - adjusts to item count!
+        pin: true,
+        pinSpacing: true,
+        scrub: 1,
+        onUpdate: (self) => {
+          const progress = self.progress;
+
+          if (progress <= 0.2) {
+            // Intro text slides in
+            const animProg = progress / 0.2;
+            const moveDist = window.innerWidth * 0.6;
+            gsap.set(servicesIntroTextElements[0], { x: -animProg * moveDist, opacity: 1 });
+            gsap.set(servicesIntroTextElements[1], { x: animProg * moveDist, opacity: 1 });
+            // Scale background
+            gsap.set(".services-bg-img", { transform: `scale(${animProg})` });
+            gsap.set(".services-bg-img img", { transform: `scale(${1.5 - animProg * 0.5})` });
+            // Hide all other items
+            servicesImageElements.forEach(img => gsap.set(img, { opacity: 0 }));
+            servicesHeader.style.opacity = "0";
+            gsap.set(servicesTitlesContainerElement, {
+              "--services-before-opacity": "0",
+              "--services-after-opacity": "0"
+            });
+          } else if (progress <= 0.25) {
+            // Intro out, header in
+            gsap.set(".services-bg-img", { transform: "scale(1)" });
+            gsap.set(".services-bg-img img", { transform: "scale(1)" });
+            servicesIntroTextElements.forEach(el => gsap.set(el, { opacity: 0 }));
+            servicesImageElements.forEach(img => gsap.set(img, { opacity: 0 }));
+            servicesHeader.style.opacity = "1";
+            gsap.set(servicesTitlesContainerElement, {
+              "--services-before-opacity": "1",
+              "--services-after-opacity": "1"
+            });
+          } else if (progress <= 0.95) {
+            // Vertical slide through service titles and animate images
+            gsap.set(".services-bg-img", { transform: "scale(1)" });
+            gsap.set(".services-bg-img img", { transform: "scale(1)" });
+            servicesIntroTextElements.forEach(el => gsap.set(el, { opacity: 0 }));
+            servicesHeader.style.opacity = "1";
+            gsap.set(servicesTitlesContainerElement, {
+              "--services-before-opacity": "1",
+              "--services-after-opacity": "1"
+            });
+
+            const switchProg = (progress - 0.25) / 0.7;
+
+            // ============================================
+            // 🎯 KEY FIX: Normalize progress to match animation duration
+            // ============================================
+            const normalizedProgress = switchProg * totalAnimationDuration;
+
+            const viewportHeight = window.innerHeight;
+            const titlesHeight = servicesTitlesContainer.scrollHeight;
+            const startY = viewportHeight;
+            const endY = -titlesHeight;
+            const totalDist = startY - endY;
+            const currentY = startY - switchProg * totalDist;
+            gsap.set(".services-titles", { transform: `translateY(${currentY}px)` });
+
+            // Position service images along the bezier path
+            servicesImageElements.forEach((img, index) => {
+              // Use normalized progress for accurate timing with any item count
+              const imgProg = getServicesImgProgressState(index, normalizedProgress);
+              if (imgProg < 0 || imgProg > 1) {
+                gsap.set(img, { opacity: 0 });
+              } else {
+                const pos = getServicesBezierPosition(imgProg);
+                gsap.set(img, {
+                  x: pos.x - 100,
+                  y: pos.y - 75,
+                  opacity: 1
+                });
+              }
+            });
+
+            // Determine which title is centered, update opacities and background
+            const viewportMid = viewportHeight / 2;
+            let closestIndex = 0, closestDist = Infinity;
+            servicesTitleElements.forEach((title, i) => {
+              const rect = title.getBoundingClientRect();
+              const titleCenter = rect.top + rect.height / 2;
+              const dist = Math.abs(titleCenter - viewportMid);
+              if (dist < closestDist) {
+                closestDist = dist;
+                closestIndex = i;
+              }
+            });
+            if (closestIndex !== servicesCurrentActiveIndex) {
+              // Fade out old title
+              if (servicesTitleElements[servicesCurrentActiveIndex]) {
+                servicesTitleElements[servicesCurrentActiveIndex].style.opacity = "0.25";
+              }
+              // Fade in new title
+              servicesTitleElements[closestIndex].style.opacity = "1";
+              // Update background image (override src and srcset for immediate change)
+              if (bgImgEl && servicesItems[closestIndex].img) {
+                bgImgEl.src = servicesItems[closestIndex].img;
+                bgImgEl.srcset = servicesItems[closestIndex].img;
+              }
+              servicesCurrentActiveIndex = closestIndex;
+            }
+          } else {
+            // End of scroll: hide header and titles
+            servicesHeader.style.opacity = "0";
+            gsap.set(servicesTitlesContainerElement, {
+              "--services-before-opacity": "0",
+              "--services-after-opacity": "0"
+            });
+          }
+        }
+      });
+
+      // ===== IMAGE WIDTH ANIMATION (Conflict-Free) =====
+      if (!isMobile) (function initImageWidthAnimation() {
+        try {
+          const section = document.querySelector("#scroll-experience");
+          const image = document.querySelector("#animated-image");
+
+          if (!section || !image) {
+            console.warn("⚠️ Image width animation: section or image not found");
+            console.warn("Section found:", !!section, "Image found:", !!image);
+            return;
+          }
+
+          // Set initial state
+          gsap.set(image, { width: "100%" });
+
+          ScrollTrigger.create({
+            trigger: section,
+            start: "top top",
+            end: () => `+=${window.innerHeight * 2}`, // 2x viewport scroll distance
+            pin: true,
+            pinSpacing: true, // ← CRITICAL: Ensures sections below push down correctly
+            scrub: 1,
+            onUpdate: (self) => {
+              const progress = self.progress;
+
+              // Animate image width from 100% to 50%
+              const width = 100 - (progress * 50); // 100% → 50%
+              gsap.set(image, { width: `${width}%` });
+            }
+          });
+
+          console.log("✅ Image width animation initialized successfully");
+          console.log("   • Section: #scroll-experience");
+          console.log("   • Image: #animated-image");
+          console.log("   • Animation: 100% → 50% width over 2x viewport");
+
+        } catch (err) {
+          console.warn("❌ Image width animation error:", err);
+        }
+      })();
+
+      // ===== TESTIMONIALS SECTION (unchanged) =====
+      if (!isMobile) (function initTestimonials() {
+        try {
+          const lightColor = getComputedStyle(document.documentElement)
+            .getPropertyValue("--testimonial-light").trim();
+          const darkColor = getComputedStyle(document.documentElement)
+            .getPropertyValue("--testimonial-dark").trim();
+          // Marquee horizontal scroll
+          const allSlides = document.querySelectorAll(".testimonial-horizontal-slide");
+          const totalSlides = allSlides.length;
+          const contentSlides = totalSlides - 1;
+          const wrapper = document.querySelector(".testimonial-horizontal-scroll-wrapper");
+          if (wrapper) wrapper.style.width = `${totalSlides * 100}vw`;
+
+          // Marquee animation
+          const marqueeWrapper = document.querySelector(".testimonial-marquee-images");
+          if (marqueeWrapper) {
+            // Clone elements for a seamless infinite loop
+            const elements = Array.from(marqueeWrapper.children);
+            elements.forEach(el => {
+              const clone = el.cloneNode(true);
+              marqueeWrapper.appendChild(clone);
+            });
+
+            // Double the original width (was 200%)
+            gsap.set(marqueeWrapper, { width: "400%" });
+
+            gsap.to(marqueeWrapper, {
+              xPercent: -50,
+              ease: "none",
+              duration: 40,
+              repeat: -1
+            });
+          }
+
+          // Clone pinned image for flip animation
+          let pinnedTestimonialImgClone = null, isImgCloneActive = false;
+          function createPinnedTestimonialImgClone() {
+            if (isImgCloneActive) return;
+            const original = document.querySelector(".testimonial-marquee-img.testimonial-pin img");
+            if (!original) return;
+            const rect = original.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            pinnedTestimonialImgClone = original.cloneNode(true);
+            gsap.set(pinnedTestimonialImgClone, {
+              position: "fixed",
+              left: centerX - original.offsetWidth / 2 + "px",
+              top: centerY - original.offsetHeight / 2 + "px",
+              width: original.offsetWidth + "px",
+              height: original.offsetHeight + "px",
+              transform: "rotate(-5deg)",
+              transformOrigin: "center center",
+              pointerEvents: "none",
+              zIndex: 1000,
+              willChange: "transform"
+            });
+            // Remove default srcset and ensure crisp edges on clone
+            pinnedTestimonialImgClone.src = pinnedTestimonialImgClone.src.replace(/-\d+x\./, ".");
+            pinnedTestimonialImgClone.srcset = "";
+            pinnedTestimonialImgClone.style.imageRendering = "crisp-edges";
+
+            document.body.appendChild(pinnedTestimonialImgClone);
+            gsap.set(original, { opacity: 0 });
+            isImgCloneActive = true;
+          }
+          function removePinnedTestimonialImgClone() {
+            if (!isImgCloneActive) return;
+            if (pinnedTestimonialImgClone) pinnedTestimonialImgClone.remove();
+            pinnedTestimonialImgClone = null;
+            const original = document.querySelector(".testimonial-marquee-img.testimonial-pin img");
+            if (original) gsap.set(original, { opacity: 1 });
+            isImgCloneActive = false;
+          }
+
+          // Pin the testimonial section
+          ScrollTrigger.create({
+            trigger: ".testimonial-horizontal-scroll",
+            start: "top top",
+            end: () => `+=${window.innerHeight * 5}`,
+            pin: true
+          });
+          // Create clone when entering marquee
+          ScrollTrigger.create({
+            trigger: ".testimonial-marquee",
+            start: "top top",
+            onEnter: createPinnedTestimonialImgClone,
+            onEnterBack: createPinnedTestimonialImgClone,
+            onLeaveBack: removePinnedTestimonialImgClone
+          });
+
+          // Flip animation when scrolling through testimonials
+          let flipAnimation = null;
+          ScrollTrigger.create({
+            trigger: ".testimonial-horizontal-scroll",
+            start: "top 50%",
+            end: () => `+=${window.innerHeight * 5.5}`,
+            onEnter: () => {
+              if (pinnedTestimonialImgClone && !flipAnimation) {
+                const state = Flip.getState(pinnedTestimonialImgClone);
+                gsap.set(pinnedTestimonialImgClone, {
+                  position: "fixed", left: "0px", top: "0px", width: "100%", height: "100svh",
+                  transform: "rotate(0deg)", zIndex: 1000
+                });
+                flipAnimation = Flip.from(state, { duration: 1, ease: "none", paused: true });
+              }
+            },
+            onLeaveBack: () => {
+              if (flipAnimation) { flipAnimation.kill(); flipAnimation = null; }
+              gsap.set(".testimonial-container", { backgroundColor: lightColor });
+              gsap.set(".testimonial-horizontal-scroll-wrapper", { x: "0%" });
+            }
+          });
+
+          // Main testimonial scroll logic
+          ScrollTrigger.create({
+            trigger: ".testimonial-horizontal-scroll",
+            start: "top 50%",
+            end: () => `+=${window.innerHeight * 5.5}`,
+            onUpdate: (self) => {
+              const progress = self.progress;
+              // Background transition
+              if (progress <= 0.05) {
+                const bgProg = Math.min(progress / 0.05, 1);
+                gsap.set(".testimonial-container", {
+                  backgroundColor: gsap.utils.interpolate(lightColor, "#F8EAEB", bgProg)
+                });
+              } else {
+                gsap.set(".testimonial-container", { backgroundColor: "#F8EAEB" });
+              }
+              // Flip image during first 20%
+              if (progress <= 0.2 && flipAnimation) flipAnimation.progress(progress / 0.2);
+              // Horizontal scroll logic
+              if (progress > 0.2 && progress <= 0.95) {
+                if (flipAnimation) flipAnimation.progress(1);
+                const hProg = (progress - 0.2) / 0.75;
+                const maxWrapperTranslate = (contentSlides / totalSlides) * 100;
+                const wrapperX = -maxWrapperTranslate * hProg;
+                gsap.set(".testimonial-horizontal-scroll-wrapper", { x: `${wrapperX}%` });
+                const imageShift = -contentSlides * 100 * hProg;
+                if (pinnedTestimonialImgClone) gsap.set(pinnedTestimonialImgClone, { x: `${imageShift}%` });
+              }
+              // Final scroll end
+              if (progress > 0.95) {
+                if (flipAnimation) flipAnimation.progress(1);
+                const maxWrapperTranslate = (contentSlides / totalSlides) * 100;
+                if (pinnedTestimonialImgClone) gsap.set(pinnedTestimonialImgClone, { x: `${-contentSlides * 100}%` });
+                gsap.set(".testimonial-horizontal-scroll-wrapper", { x: `${-maxWrapperTranslate}%` });
+              }
+            }
+          });
+        } catch (err) {
+          console.warn("Testimonials init error:", err);
+        }
+      })();
+
+      // ===== CTA SECTION (unchanged) =====
+      if (!isMobile) (function initCTA() {
+        try {
+          const ctaContainer = $(".cta-banner-img-container");
+          const introTexts = $$(".cta-banner-intro-text");
+          const maskLayers = $$(".cta-mask");
+          const ctaHeaderEl = $(".cta-banner-header h3");
+          const splitObj = ctaHeaderEl ? new SplitText(ctaHeaderEl, { type: "words" }) : null;
+          const words = splitObj ? splitObj.words : [];
+
+          gsap.set(words, { opacity: 0 });
+          maskLayers.forEach((layer, i) => gsap.set(layer, { scale: 0.9 - i * 0.2 }));
+          if (ctaContainer) gsap.set(ctaContainer, { scale: 0 });
+
+          ScrollTrigger.create({
+            trigger: ".cta-banner",
+            start: "top top",
+            end: () => `+=${window.innerHeight * 4}`,
+            pin: true,
+            pinSpacing: true,
+            scrub: 1,
+            onUpdate: (self) => {
+              const progress = self.progress;
+              if (ctaContainer) gsap.set(ctaContainer, { scale: progress });
+              maskLayers.forEach((layer, i) => {
+                const initial = 0.9 - i * 0.2;
+                const layerProg = Math.min(progress / 0.9, 1.0);
+                const currentScale = initial + layerProg * (1.0 - initial);
+                gsap.set(layer, { scale: currentScale });
+              });
+              if (progress <= 0.9) {
+                const textProg = progress / 0.9;
+                const moveDist = window.innerWidth * 0.5;
+                if (introTexts[0]) gsap.set(introTexts[0], { x: -textProg * moveDist });
+                if (introTexts[1]) gsap.set(introTexts[1], { x: textProg * moveDist });
+              }
+              if (progress >= 0.7 && progress <= 0.9 && words.length) {
+                const headerProg = (progress - 0.7) / 0.2;
+                const totalWords = words.length;
+                words.forEach((word, i) => {
+                  const startDelay = i / totalWords;
+                  const endDelay = (i + 1) / totalWords;
+                  let wordOpacity = 0;
+                  if (headerProg >= endDelay) {
+                    wordOpacity = 1;
+                  } else if (headerProg >= startDelay) {
+                    const wordProg = (headerProg - startDelay) / (endDelay - startDelay);
+                    wordOpacity = wordProg;
+                  }
+                  gsap.set(word, { opacity: wordOpacity });
+                });
+              } else if (progress < 0.7 && words.length) {
+                gsap.set(words, { opacity: 0 });
+              } else if (progress > 0.9 && words.length) {
+                gsap.set(words, { opacity: 1 });
+              }
+            }
+          });
+        } catch (err) {
+          console.warn("CTA init error:", err);
+        }
+      })();
+
+      // Final refresh to ensure everything is calculated correctly
+      setTimeout(() => {
+        try { ScrollTrigger.refresh(); } catch (e) { }
+      }, 150);
+    });
+
+    // ===== TEXT ANIMATION (split lines) =====
+    Webflow.push(function () {
+      (function initTextAnimations() {
+        const els = document.querySelectorAll('.text-animate');
+        els.forEach(el => {
+          if (el.__textAnimated) return;
+          el.__textAnimated = true;
+          if (window.SplitText) {
+            const split = new SplitText(el, { type: "lines", linesClass: "line" });
+            split.lines.forEach(line => {
+              const inner = document.createElement('span');
+              inner.className = 'line-inner';
+              inner.innerHTML = line.innerHTML;
+              line.innerHTML = '';
+              line.appendChild(inner);
+            });
+            const inners = el.querySelectorAll('.line .line-inner');
+            gsap.set(inners, { y: '100%' });
+            ScrollTrigger.create({
+              trigger: el,
+              start: 'top 80%',
+              onEnter: (self) => {
+                gsap.to(inners, { y: '0%', duration: 0.8, ease: 'power3.out', stagger: 0.08, onComplete: () => self.kill() });
+              }
+            });
+          }
+        });
+      })();
+    });
+  </script>
+  <script>
+    gsap.registerPlugin(CustomEase);
+
+    const customEase = CustomEase.create("custom", ".87,0,.13,1");
+    const counter = document.getElementById("counter");
+    const preloader = document.querySelector(".preloader");
+
+    // Track page load progress
+    let loadProgress = 0;
+    const totalAssets = document.querySelectorAll("img, video").length;
+    let assetsLoaded = 0;
+
+    gsap.set(".video-container", {
+      scale: 0,
+      rotation: -20,
+    });
+
+    // Listen for all images and videos to load
+    document.querySelectorAll("img, video").forEach((asset) => {
+      asset.addEventListener("load", () => {
+        assetsLoaded++;
+        loadProgress = (assetsLoaded / totalAssets) * 100;
+      });
+
+      asset.addEventListener("error", () => {
+        assetsLoaded++;
+        loadProgress = (assetsLoaded / totalAssets) * 100;
+      });
+    });
+
+    // Wait for all page content to load
+    window.addEventListener("load", () => {
+      loadProgress = 100;
+      startPreloaderAnimation();
+    });
+
+    function startPreloaderAnimation() {
+      gsap.to(".hero", {
+        clipPath: "polygon(0% 45%, 25% 45%, 25% 55%, 0% 55%)",
+        duration: 1.5,
+        ease: customEase,
+        delay: 1,
+      });
+
+      gsap.to(".hero", {
+        clipPath: "polygon(0% 45%, 100% 45%, 100% 55%, 0% 55%)",
+        duration: 2,
+        ease: customEase,
+        delay: 3,
+
+        onStart: () => {
+          gsap.to(".progress-bar", {
+            width: "100vw",
+            duration: 2,
+            ease: customEase,
+          });
+
+          gsap.to(counter, {
+            innerHTML: 100,
+            duration: 2,
+            ease: customEase,
+            snap: { innerHTML: 1 },
+          });
+        },
+      });
+
+      gsap.to(".hero", {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        duration: 1,
+        ease: customEase,
+        delay: 5,
+        onStart: () => {
+          gsap.to(".video-container", {
+            scale: 1,
+            rotation: 0,
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+            duration: 1.25,
+            ease: customEase,
+          });
+
+          gsap.to(".progress-bar", {
+            opacity: 0,
+            duration: 0.3,
+          });
+        },
+        onComplete: () => {
+          if (!preloader) return;
+
+          gsap.to(preloader, {
+            autoAlpha: 0,          // opacity 0 + visibility hidden
+            duration: 0.6,
+            ease: "power2.out",
+            onComplete: () => {
+              gsap.set(preloader, {
+                display: "none"    // PERMANENTLY remove from render tree
+              });
+              document.body.style.overflow = "auto";
+            }
+          });
+        }
+
+
+      });
+    }
+  </script>
+</body>
+
+</html>

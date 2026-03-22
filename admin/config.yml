@@ -1,0 +1,116 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+site_url: https://your-site.netlify.app
+display_url: https://your-site.netlify.app
+
+collections:
+  # ── SITE SETTINGS ────────────────────────────────────────
+  - name: "site_settings"
+    label: "Site Settings"
+    files:
+      - name: "general"
+        label: "General Settings"
+        file: "_data/site_settings.json"
+        fields:
+          - { label: "Business Name", name: "business_name", widget: "string", default: "Alluring Occasions by Bianca" }
+          - { label: "Tagline", name: "tagline", widget: "string", default: "Where Every Occasion Becomes Unforgettable." }
+          - { label: "About Text (Paragraph 1)", name: "about_p1", widget: "text" }
+          - { label: "About Text (Paragraph 2)", name: "about_p2", widget: "text" }
+          - { label: "Phone Number", name: "phone", widget: "string" }
+          - { label: "Email Address", name: "email", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+          - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+          - { label: "TikTok URL", name: "tiktok", widget: "string", required: false }
+          - label: "About Photo"
+            name: "about_photo"
+            widget: "image"
+            required: false
+
+  # ── SERVICES ─────────────────────────────────────────────
+  - name: "services"
+    label: "Services"
+    label_singular: "Service"
+    folder: "_data/services"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Service Name", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - label: "Photo"
+        name: "image"
+        widget: "image"
+      - { label: "Order (lower = first)", name: "order", widget: "number", default: 1 }
+
+  # ── GALLERY ──────────────────────────────────────────────
+  - name: "gallery"
+    label: "Gallery"
+    label_singular: "Photo"
+    folder: "_data/gallery"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - label: "Photo"
+        name: "image"
+        widget: "image"
+      - { label: "Caption", name: "caption", widget: "string" }
+      - { label: "Order (lower = first)", name: "order", widget: "number", default: 1 }
+
+  # ── TESTIMONIALS ─────────────────────────────────────────
+  - name: "testimonials"
+    label: "Testimonials"
+    label_singular: "Testimonial"
+    folder: "_data/testimonials"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Client Name", name: "name", widget: "string" }
+      - { label: "Quote", name: "quote", widget: "text" }
+      - { label: "Role / Description", name: "role", widget: "string" }
+      - { label: "Star Rating (1–5)", name: "stars", widget: "number", default: 5, min: 1, max: 5 }
+
+  # ── FAQS ─────────────────────────────────────────────────
+  - name: "faqs"
+    label: "FAQ"
+    label_singular: "FAQ Item"
+    folder: "_data/faqs"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Question", name: "question", widget: "string" }
+      - { label: "Answer", name: "answer", widget: "text" }
+      - { label: "Order (lower = first)", name: "order", widget: "number", default: 1 }
+
+  # ── BLOCKED DATES (Availability Calendar) ────────────────
+  - name: "blocked_dates"
+    label: "Availability — Block Dates"
+    files:
+      - name: "blocked_dates"
+        label: "Booked / Unavailable Dates"
+        file: "_data/blocked_dates.json"
+        fields:
+          - label: "Blocked Dates"
+            name: "blocked_dates"
+            widget: "list"
+            label_singular: "Date"
+            hint: "Add each date that is already booked. Format: YYYY-MM-DD. These will show as unavailable on the calendar."
+            field:
+              label: "Date"
+              name: "date"
+              widget: "datetime"
+              format: "YYYY-MM-DD"
+              time_format: false
+              date_format: "YYYY-MM-DD"
