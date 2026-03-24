@@ -17,6 +17,7 @@
         initHeroAnimation();
         initScrollReveal();
         initParallaxBanner();
+        initParallaxSectionBgs();
         initServicesSection();
         initGallery();
         initCounters();
@@ -222,6 +223,31 @@
                 },
             }
         );
+    }
+
+    // ── PARALLAX SECTION BACKGROUNDS (testimonials + faq) ──
+    function initParallaxSectionBgs() {
+        const sections = [
+            { section: '#testimonials', bg: '#testimonialsBg img' },
+            { section: '#faq', bg: '#faqBg img' },
+        ];
+        sections.forEach(({ section, bg }) => {
+            const el = document.querySelector(bg);
+            if (!el) return;
+            gsap.fromTo(el,
+                { yPercent: -10 },
+                {
+                    yPercent: 10,
+                    ease: 'none',
+                    scrollTrigger: {
+                        trigger: section,
+                        start: 'top bottom',
+                        end: 'bottom top',
+                        scrub: 1.5,
+                    },
+                }
+            );
+        });
     }
 
     // ── SERVICES SECTION ANIMATION ─────────────────────
