@@ -448,11 +448,6 @@
 
     // ── TESTIMONIAL MARQUEE ────────────────────────────
     function initTestimonialMarquee() {
-        if (typeof Flip === 'undefined') {
-            console.warn("GSAP Flip plugin not found. Skipping image flip animation.");
-            return;
-        }
-
         const marqueeWrapper = document.querySelector('.testimonial-marquee-images');
         if (!marqueeWrapper) return;
 
@@ -463,137 +458,17 @@
             marqueeWrapper.appendChild(clone);
         });
 
-        // Double the original width
-        gsap.set(marqueeWrapper, { width: "400%" });
+        // Calculate proper width: each original set is 100%, so with clones we need 200%
+        // The translate(-50%) in xPercent will seamlessly reset
+        const totalChildren = marqueeWrapper.children.length;
+        const childWidth = 100 / elements.length; // % per original child
+        gsap.set(marqueeWrapper, { width: (totalChildren * childWidth) + "%" });
 
         gsap.to(marqueeWrapper, {
             xPercent: -50,
             ease: "none",
             duration: 40,
             repeat: -1
-        });
-
-        // ---- PIN & FLIP ANIMATION ----
-        let pinnedTestimonialImgClone = null;
-        let isImgCloneActive = false;
-
-        function createPinnedTestimonialImgClone() {
-            if (isImgCloneActive) return;
-            const original = document.querySelector(".testimonial-marquee-img.testimonial-pin img");
-            if (!original) return;
-            const rect = original.getBoundingClientRect();
-            const centerX = rect.left + rect.width / 2;
-            const centerY = rect.top + rect.height / 2;
-
-            const scrollY = window.scrollY || window.pageYOffset;
-
-            pinnedTestimonialImgClone = original.cloneNode(true);
-            gsap.set(pinnedTestimonialImgClone, {
-                position: "absolute",
-                left: centerX - original.offsetWidth / 2 + "px",
-                top: (centerY - original.offsetHeight / 2) + scrollY + "px",
-                width: original.offsetWidth + "px",
-                height: original.offsetHeight + "px",
-                transform: "rotate(-5deg)",
-                transformOrigin: "center center",
-                pointerEvents: "none",
-                zIndex: 1000,
-                willChange: "transform",
-                objectFit: "cover"
-            });
-
-            const smoothContent = document.querySelector('#smooth-content') || document.body;
-            smoothContent.appendChild(pinnedTestimonialImgClone);
-            gsap.set(original, { opacity: 0 });
-            isImgCloneActive = true;
-        }
-
-        function removePinnedTestimonialImgClone() {
-            if (!isImgCloneActive) return;
-            if (pinnedTestimonialImgClone) pinnedTestimonialImgClone.remove();
-            pinnedTestimonialImgClone = null;
-            const original = document.querySelector(".testimonial-marquee-img.testimonial-pin img");
-            if (original) gsap.set(original, { opacity: 1 });
-            isImgCloneActive = false;
-        }
-
-        // Pin the testimonials section
-        ScrollTrigger.create({
-            trigger: "#testimonials",
-            start: "top top",
-            end: () => `+=${window.innerHeight * 1.5}`,
-            pin: true,
-            pinSpacing: true
-        });
-
-        // Create clone when entering marquee so it's ready to flip
-        ScrollTrigger.create({
-            trigger: ".testimonial-marquee",
-            start: "top bottom",
-            onEnter: createPinnedTestimonialImgClone,
-            onEnterBack: createPinnedTestimonialImgClone,
-            onLeaveBack: removePinnedTestimonialImgClone
-        });
-
-        // Flip animation when scrolling into #testimonials
-        let flipAnimation = null;
-        ScrollTrigger.create({
-            trigger: "#testimonials",
-            start: "top 50%",
-            end: () => `+=${window.innerHeight * 1.5}`,
-            onEnter: () => {
-                if (pinnedTestimonialImgClone && !flipAnimation) {
-                    const state = Flip.getState(pinnedTestimonialImgClone);
-
-                    // We need to move it relative to the viewport but since it's absolute inside smooth-content,
-                    // we calculate the target position based on current scroll.
-                    const scrollY = window.scrollY || window.pageYOffset;
-                    gsap.set(pinnedTestimonialImgClone, {
-                        position: "absolute",
-                        left: "0px",
-                        top: scrollY + "px",
-                        width: "100%",
-                        height: "100svh",
-                        transform: "rotate(0deg)",
-                        zIndex: 1000
-                    });
-                    flipAnimation = Flip.from(state, { duration: 1, ease: "none", paused: true });
-                }
-            },
-            onLeaveBack: () => {
-                if (flipAnimation) { flipAnimation.kill(); flipAnimation = null; }
-                if (pinnedTestimonialImgClone) gsap.set(pinnedTestimonialImgClone, { opacity: 1 });
-            },
-            onUpdate: (() => {
-                // Progress proxy for smooth testimonial flip interpolation
-                const flipProxy = { value: 0 };
-                function applyFlipProgress(progress) {
-                    // Flip image during first 40% of the pin
-                    let flipProgress = Math.min(progress / 0.4, 1);
-                    if (flipAnimation) flipAnimation.progress(flipProgress);
-
-                    // After flip is done, fade out the clone to reveal testimonials
-                    if (progress > 0.4) {
-                        let fadeProgress = Math.min((progress - 0.4) / 0.3, 1);
-                        if (pinnedTestimonialImgClone) {
-                            gsap.set(pinnedTestimonialImgClone, { opacity: 1 - fadeProgress });
-                        }
-                    } else {
-                        if (pinnedTestimonialImgClone) {
-                            gsap.set(pinnedTestimonialImgClone, { opacity: 1 });
-                        }
-                    }
-                }
-                return (self) => {
-                    gsap.to(flipProxy, {
-                        value: self.progress,
-                        duration: 0.25,
-                        ease: "power2.out",
-                        overwrite: true,
-                        onUpdate: () => applyFlipProgress(flipProxy.value)
-                    });
-                };
-            })()
         });
     }
 
@@ -748,7 +623,12 @@
                     Flip.from(state, {
                         duration: 1.4,
                         ease: "elastic.out(1, 0.5)",
-                        stagger: 0.03
+                        stagger: 0.03,
+                        onComplete: () => {
+                            // Ensure all chars are fully visible and transforms are cleared after animation
+                            gsap.set(allChars, { clearProps: "all" });
+                            allChars.forEach(c => { c.style.opacity = "1"; c.style.transform = "none"; });
+                        }
                     });
 
                     // 5. Fade them in independently (since Flip doesn't animate opacity)
@@ -756,8 +636,7 @@
                         opacity: 1,
                         duration: 0.5,
                         stagger: 0.03,
-                        ease: "power2.out",
-                        clearProps: "opacity"
+                        ease: "power2.out"
                     });
                 }
             });

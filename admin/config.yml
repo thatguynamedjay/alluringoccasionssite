@@ -1,12 +1,13 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: thatguynamedjay/alluringoccasionssite
   branch: main
 
 media_folder: "images"
 public_folder: "/images"
 
-site_url: https://your-site.netlify.app
-display_url: https://your-site.netlify.app
+site_url: https://thatguynamedjay.github.io/alluringoccasionssite
+display_url: https://thatguynamedjay.github.io/alluringoccasionssite
 
 collections:
   # ── SITE SETTINGS ────────────────────────────────────────
