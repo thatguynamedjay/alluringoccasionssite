@@ -619,24 +619,32 @@
                     // 3. Clear transforms but keep opacity 0 so they fade in via tween
                     gsap.set(allChars, { clearProps: "transform" });
 
-                    // 4. Use Flip to animate them FROM the scattered/invisible state TO the natural/visible state
+                    // 4. Calculate total animation time for cleanup
+                    const totalFlipTime = 1.4 + (allChars.length * 0.03);
+
+                    // 5. Use Flip to animate FROM scattered state TO natural position
                     Flip.from(state, {
                         duration: 1.4,
                         ease: "elastic.out(1, 0.5)",
-                        stagger: 0.03,
-                        onComplete: () => {
-                            // Ensure all chars are fully visible and transforms are cleared after animation
-                            gsap.set(allChars, { clearProps: "all" });
-                            allChars.forEach(c => { c.style.opacity = "1"; c.style.transform = "none"; });
-                        }
+                        stagger: 0.03
                     });
 
-                    // 5. Fade them in independently (since Flip doesn't animate opacity)
+                    // 6. Fade in opacity independently (Flip doesn't animate opacity)
                     gsap.to(allChars, {
                         opacity: 1,
                         duration: 0.5,
                         stagger: 0.03,
                         ease: "power2.out"
+                    });
+
+                    // 7. After ALL animations are done, lock in final visible state permanently
+                    gsap.delayedCall(totalFlipTime + 0.2, () => {
+                        allChars.forEach(c => {
+                            c.style.opacity = "1";
+                            c.style.transform = "none";
+                            c.style.display = "inline-block";
+                            c.style.position = "relative";
+                        });
                     });
                 }
             });
