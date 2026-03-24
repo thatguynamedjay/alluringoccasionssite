@@ -228,6 +228,7 @@
     // ── PARALLAX SECTION BACKGROUNDS (testimonials + faq) ──
     function initParallaxSectionBgs() {
         const sections = [
+            { section: '#about', bg: '#aboutBg img' },
             { section: '#testimonials', bg: '#testimonialsBg img' },
             { section: '#faq', bg: '#faqBg img' },
         ];
@@ -235,9 +236,9 @@
             const el = document.querySelector(bg);
             if (!el) return;
             gsap.fromTo(el,
-                { yPercent: -10 },
+                { y: -40 },
                 {
-                    yPercent: 10,
+                    y: 40,
                     ease: 'none',
                     scrollTrigger: {
                         trigger: section,

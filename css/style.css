@@ -469,6 +469,13 @@ em {
 /* ── ABOUT ── */
 .about-section {
   background: var(--color-ink-2);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section .container {
+  position: relative;
+  z-index: 2;
 }
 
 .about-grid {
@@ -882,12 +889,14 @@ em {
 }
 
 .parallax-section-bg img {
+  position: absolute;
+  inset: -15% 0;          /* Extra height top+bottom for parallax travel */
   width: 100%;
-  height: 120%;
+  height: auto;
+  min-height: 130%;
   object-fit: cover;
   object-position: center;
   will-change: transform;
-  transform: translateY(0);
 }
 
 .parallax-section-overlay {
@@ -898,6 +907,16 @@ em {
     rgba(14, 6, 22, 0.88) 0%,
     rgba(74, 20, 112, 0.78) 50%,
     rgba(14, 6, 22, 0.92) 100%
+  );
+}
+
+/* Lighter overlay — lets the marble texture show through */
+.parallax-section-overlay--subtle {
+  background: linear-gradient(
+    135deg,
+    rgba(14, 6, 22, 0.72) 0%,
+    rgba(74, 20, 112, 0.55) 50%,
+    rgba(14, 6, 22, 0.78) 100%
   );
 }
 
